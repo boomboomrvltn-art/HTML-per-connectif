@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Día de la Madre - Customima</title>
+
+<!-- Google Fonts Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', Arial, sans-serif;
+    background-color:#f0f0f0; /* fons gris global */
+  }
+
+  /* ===================== Banner general ===================== */
+  .banner{
+    width:600px;
+    margin:0 auto; 
+  }
+
+  /* Banner 1 */
+  .banner1{
+    background-color:#ffffff; 
+    color:#5c5c5c;
+    text-align:center;
+  }
+  .banner1-titulo{
+    font-size:30px;
+    color:#c7b1a1;
+    font-weight:300;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    padding:20px 20px 10px 20px;
+  }
+  .banner1-subtitulo{
+    font-size:22px;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    padding:0px 25px 0px 25px;
+    color:#5c5c5c;
+  }
+  .banner1-subtitulo2{
+    font-size:18px;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    padding:0px 25px 20px 25px;
+    color:#5c5c5c;
+  }
+  
+  .banner1-texto{
+    font-size:16px;
+    line-height:1.6;
+    padding:0 30px 30px 30px;
+  }
+
+  /* Banner 2 */
+  .banner2{
+    background-color:#c7b1a1;
+    color:white;
+    text-align:center;
+    padding:20px 0px 0px 0px;
+  }
+  .banner2-subtitulo{
+    font-size:22px;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    padding:0px 25px 0px 25px;
+  }
+    .banner2-subtitulo2{
+    font-size:18px;
+    letter-spacing:1.2px;
+    padding:0px 25px 20px 25px;
+  }
+  .banner2-lista{
+    font-size:16px;
+    line-height:1.6;
+    padding:0 60px 0px 60px;
+    text-align:left;
+  }
+  .banner2-final{
+    font-size:16px;
+    padding:0px 35px;
+    font-weight: 600;
+  }
+
+  /* Bloque blanco interno del banner2 */
+  .banner-block-white{
+    width:65%;
+    margin:0 auto;
+    background-color:#ffffff;
+    color:#c7b1a1;
+    padding: 20px 20px 10px 20px;
+    text-align:center;
+    border-radius:12px;
+    line-height: 1.2px;
+  }
+
+  /* Estil botó personalitzat */
+  .btn-patos {
+    background-color: #bc6a4f;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', Arial, sans-serif;
+    display: block;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  /* Contenidor del botó per centrar-lo i que no ocupi tot l'ample */
+  .btn-container {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /* ===================== Footer simple ===================== */
+  .foot1{
+    background-color:#000000;
+    color:white;
+    text-align:center;
+    width:600px;
+    margin:0 auto;
+    padding:10px 0;
+    font-size:14px;
+    font-family:'Poppins', Arial, sans-serif;
+  }
+  /* ===================== Banner general ===================== */
+ 
+/* ===================== Aviso importante ===================== */
+.important-note {
+  background-color: #fff2cc;
+  color: #635951;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  border: 5px solid #c7b1a1;
+  margin: 0px auto;          
+  padding: 15px 20px;         
+  width: 560px;               
+  display: block;
+  border-radius: 0px;
+  font-family: 'Poppins', Arial, sans-serif;
+  box-sizing: border-box;     
+}
+
+/* ===================== Tabla de fechas y regalos ===================== */
+.gift-table {
+  margin: 0 auto;             
+  width: 560px;               
+  border-collapse: collapse;
+  border: 1px solid #c7b1a1;
+  font-size: 14px;
+  text-align: left;
+  box-sizing: border-box;     
+}
+
+.gift-table th {
+  background-color: #c7b1a1;
+  color: #ffffff;
+  padding: 8px;
+}
+
+.gift-table td {
+  padding: 8px;
+  border-top: 1px solid #c7b1a1;
+}
+
+ /* Título TIP más compacto */
+.banner-tips-tit {
+  font-size: 20px;       
+  font-weight: 700;
+  text-align: center;
+  margin: 0;              
+  padding: 20px 0 0 0;            
+  line-height: 1.1;       
+}
+
+/* Contenedor TIP */
+.banner-tips {
+  background-color: #a1c4c7;
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0px 20px 12px 20px; 
+  font-family: 'Poppins', Arial, sans-serif;
+  border-radius: 5px;
+  line-height: 1.4;       
+}
+
+/* Espacio blanco encima del TIP */
+.banner-tips-space {
+  height: 20px;       
+  background-color: #ffffff; 
+}
+
+/* Banner de dos columnas completo */
+.banner-two-columns {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ede5de; 
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.two-columns-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.two-columns-table td {
+  vertical-align: top;
+  padding: 0;
+}
+
+/* Columna izquierda: imagen rellena toda la columna */
+.column-left {
+  width: 50%;
+}
+.column-left img {
+  display: block;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.column-right {
+  width: 50%;
+  padding: 20px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- ===================== BANNER 1 (blanc) ===================== -->
+<table class="banner banner1" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+  <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/Guia_dia_madre.jpg?v=1771336506" width="600" style="display:block;" alt="Día de la Madre">
+</td>
+</tr>
+<tr>
+<td class="banner1-titulo">
+GUÍA ESPECIAL DÍA DE LA MADRE
+</td>
+</tr>
+<tr>
+<td class="banner1-subtitulo">
+Sorprende a mamá con la joya más emotiva y personalizada gratis
+</td>
+</tr>
+<tr>
+<td class="banner1-texto">
+En Customima, sabemos que el Día de la Madre es un momento especial para demostrar amor y cariño. Por eso, nuestra colección de patos se ha convertido en el top ventas del año, ofreciendo no solo un diseño adorable, sino también un valor emocional único. Cada pato representa a un miembro de la familia, y juntos crean un símbolo de unión que captura la atención y despierta emociones, convirtiéndose en un regalo inolvidable.
+Esta guía te mostrará cómo personalizar la familia de patos y otras joyas para hacer que mamá se sienta verdaderamente especial.
+</td>
+</tr>
+</table>
+
+<!-- ===================== BANNER BOTÓ (fons blanc) ===================== -->
+<table class="banner banner1" cellpadding="0" cellspacing="0">
+  <tr>
+    <td class="btn-container">
+      <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block;">
+        <tr>
+          <td>
+            <a href="#" class="btn-patos">
+              CREA TU FAMILIA DE PATOS PERSONALIZADA
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- ===================== BANNER 2 ===================== -->
+<table class="banner banner2" cellpadding="0" cellspacing="0">
+<tr>
+<td class="banner2-subtitulo">
+COLECCIÓN DE PATOS
+</td></tr><tr>
+<td class="banner2-subtitulo2">
+La familia que se lleva puesta
+</td>
+</tr>
+
+<!-- Bloque blanc intern 75% amb bordes redondejats -->
+<tr>
+<td>
+  <div class="banner-block-white">
+    <div style="font-size:16px; font-style:italic; font-weight:600; margin-bottom:12px;">
+      ¿Qué es el efecto impronta?
+    </div>
+    <div style="font-size:12px; line-height:1.6; font-style: italic;">
+      El efecto impronta hace referencia a la conexión emocional inmediata hacia los símbolos de familia y cuidado.
+    </div>
+  </div>
+</td>
+</tr>
+
+<!-- Lista -->
+<tr>
+<td>
+<ul class="banner2-lista">
+<li><strong>MAMÁ PATO:</strong> centro de la familia, símbolo de protección y cariño.</li>
+<li><strong>PATITO O BEBÉ:</strong> representa a los hijos pequeños, la inocencia y la ternura.</li>
+<li><strong>ADOLESCENTES:</strong> versiones más grandes de los patitos, simbolizando crecimiento y apoyo.</li>
+<li><strong>PAPÁ PATO Y PATITA:</strong> equilibrio familiar y apoyo de la pareja.</li>
+<li><strong>ABUELA:</strong> sabiduría, raíces y amor intergeneracional.</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td class="banner2-final">
+<p>Crea toda la familia: cada miembro puede tener su pato personalizado, formando un regalo familiar completo, perfecto para emocionar a mamá. </p><p>Personalización única. </p>
+<p>Cada pato puede grabarse por detrás con el nombre de la persona que representa, reforzando la conexión emocional y haciendo cada pieza un recuerdo único.</p>
+
+</td>
+</tr>
+<!-- ===================== BANNER TIPS ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#c7b1a1; padding: 0 0 20px 0;">
+  <tr>
+    <td>
+      <div class="banner-tips">
+        <p class="banner-tips-tit">TIP</p>
+        <p>Destacar la posibilidad de crear la familia completa de patos personalizada aumenta la percepción de valor y convierte el regalo en algo memorable y exclusivo.</p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+
+<!-- ===================== BANNER DOS COLUMNAS ===================== -->
+<table class="banner banner-two-columns" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td>
+      <table class="two-columns-table" cellpadding="0" cellspacing="0">
+        <tr>
+          <!-- Columna izquierda: imagen rellena toda la columna -->
+          <td class="column-left">
+            <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/2_1b670bfb-f4ec-4064-9e78-81a4e5ab43b2.jpg?v=1767627866" alt="Para mamá">
+          </td>
+
+          <!-- Columna derecha: texto -->
+          <td class="column-right" style="padding:20px 30px 0px 20px;">
+            <h2 style="margin-top:0; margin-bottom:10px; font-size:16px;">Otras joyas personalizadas que emocionan</h2>
+            <ul style="font-size: 14px; margin: 0; padding-left:15px;"><li><strong>Collares grabados:</strong>Collares grabados: nombres, fechas o frases cortas como “Siempre en mi corazón”.</li>
+<li><strong>Pulseras con charms o iniciales:</strong> árbol de la vida, infinito, iniciales de la familia.</li>
+<li><strong>Anillos grabados por dentro:</strong> “Te amo siempre”, coordenadas de un lugar especial, fechas de nacimiento.</li>
+<li><strong>Llamadores de ángeles:</strong> inicial o mensaje corto de protección y amor.</li></ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- Espacio blanco debajo -->
+<table class="banner" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="height:30px; background-color:#ffffff;">&nbsp;</td>
+  </tr>
+</table>
+
+
+
+<!-- ===================== BANNER 3 ===================== -->
+<table class="banner banner1" cellpadding="0" cellspacing="0">
+<tr>
+<td class="banner1-subtitulo">
+IDEAS DE FRASES Y GRABADOS
+</td>
+</tr>
+<tr>
+<td>
+  <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/Sin-titulo-2_114889ec-3409-4201-9d82-e5d671eaecce.png?v=1771341312" width="600" style="display:block; margin:0 auto;" alt="Ejemplos de grabados">
+</td>
+</tr>
+</table>
+<!-- ===================== BANNER TIPS ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+  <tr>
+    <td>
+      <div class="banner-tips">
+        <p class="banner-tips-tit">TIP</p>
+        <p>Frases cortas son más legibles y elegantes en joyas pequeñas y generan un impacto emocional inmediato.</p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- ===================== ESPACIO BLANCO ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="height:10px; background-color:#ffffff;">&nbsp;</td>
+  </tr>
+</table>
+
+<!-- ===================== AVISO IMPORTANTE + TABLA ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+  <table class="banner banner1" cellpadding="0" cellspacing="0">
+<tr>
+<td class="banner1-subtitulo">
+Calendario de inspiración online
+</td>
+</tr>
+<tr>
+<td class="banner1-subtitulo2" style="text-transform:none">
+Cuándo pedir y qué joya
+</td>
+</tr>
+
+
+<!-- Mensaje importante -->
+  <tr>
+    <td class="important-note">
+  ⚠️ <strong>Importante:</strong> entregamos en 48 horas, así que para asegurarte de que tu regalo llegue a tiempo, planifica tu compra con antelación.
+</td>
+
+  </tr>
+<!-- ===================== ESPACIO BLANCO ===================== -->
+
+  <tr>
+    <td style="height:0px; background-color:#ffffff;">&nbsp;</td>
+  </tr>
+
+  <!-- Tabla -->
+  <tr>
+    <td style="padding:0 20px 20px 20px;">
+      <table class="gift-table" cellpadding="0" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Fecha para comprar</th>
+            <th>Joyas sugeridas</th>
+            <th>Idea de grabado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>7–5 días antes del Día de la Madre</td>
+            <td style="background-color:#f4f4f4;">Colección de Patos personalizada</td>
+            <td>Nombres de cada miembro de la familia, “Te quiero mamá”</td>
+          </tr>
+          <tr>
+            <td>5–3 días antes</td>
+            <td style="background-color:#f4f4f4;">Pulsera de charms o árbol de la vida</td>
+            <td>Nombres o fechas especiales</td>
+          </tr>
+          <tr>
+            <td>5–3 días antes</td>
+            <td style="background-color:#f4f4f4;">Anillo grabado</td>
+            <td>“Siempre en mi corazón”</td>
+          </tr>
+          <tr>
+            <td>5–3 días antes</td>
+            <td style="background-color:#f4f4f4;">Llamador de ángeles</td>
+            <td>Inicial de los hijos o mensaje de protección</td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<!-- ===================== BANNER TIPS ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+  <tr>
+    <td>
+      <div class="banner-tips">
+        <p class="banner-tips-tit">TIP DE PLANIFICACIÓN</p>
+        <p>Pedir con al menos 3–7 días de antelación asegura personalización y entrega rápida, evitando sorpresas de último minuto.</p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- ===================== ESPACIO BLANCO ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="height:30px; background-color:#ffffff;">&nbsp;</td>
+  </tr>
+</table>
+
+
+<!-- ===================== FOOTER SIMPLE ===================== -->
+ 
+<table class="foot1" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      &copy; 2026 CUSTOMIMA
+    </td>
+  </tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,602 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checklist rápida - ¿Es oro o plata? Cómo identificar metales auténticos</title>
+
+<!-- Google Fonts Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  body{
+    margin:0;
+    padding:0;
+    font-family:'Poppins', Arial, sans-serif;
+    background-color:#f0f0f0; /* fons gris global */
+  }
+
+  /* ===================== Banner general ===================== */
+  .banner{
+    width:600px;
+    margin:0 auto; 
+  }
+
+  /* Banner 1 */
+  .banner1{
+    background-color:#ffffff; 
+    color:#5c5c5c;
+    text-align:center;
+  }
+  .banner1-titulo{
+    font-size:30px;
+    color:#c7b1a1;
+    font-weight:300;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    padding:20px 20px 10px 20px;
+  }
+  .banner1-subtitulo{
+    font-size:22px;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    padding:0px 25px 0px 25px;
+    color:#5c5c5c;
+  }
+  .banner1-subtitulo2{
+    font-size:18px;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    padding:0px 25px 20px 25px;
+    color:#5c5c5c;
+  }
+  
+  .banner1-texto{
+    font-size:16px;
+    line-height:1.6;
+    padding:0 30px 30px 30px;
+  }
+
+  /* Banner 2 */
+  .banner2{
+    background-color:#c7b1a1;
+    color:white;
+    text-align:center;
+    padding:20px 0px 0px 0px;
+  }
+  .banner2-subtitulo{
+    font-size:22px;
+    text-transform:uppercase;
+    letter-spacing:1.2px;
+    padding:0px 25px 0px 25px;
+  }
+    .banner2-subtitulo2{
+    font-size:18px;
+    letter-spacing:1.2px;
+    padding:0px 25px 20px 25px;
+  }
+  .banner2-lista{
+    font-size:16px;
+    line-height:1.6;
+    padding:0 60px 0px 60px;
+    text-align:left;
+  }
+  .banner2-final{
+    font-size:16px;
+    padding:0px 35px;
+    font-weight: 600;
+  }
+
+  /* Bloque blanco interno del banner2 */
+  .banner-block-white{
+    width:65%;
+    margin:0 auto;
+    background-color:#ffffff;
+    color:#c7b1a1;
+    padding: 20px 20px 10px 20px;
+    text-align:center;
+    border-radius:12px;
+    line-height: 1.2px;
+  }
+
+  /* Estil botó personalitzat */
+  .btn-patos {
+    background-color: #bc6a4f;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', Arial, sans-serif;
+    display: block;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-align: center;
+  }
+
+  /* Contenidor del botó per centrar-lo i que no ocupi tot l'ample */
+  .btn-container {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /* ===================== Footer simple ===================== */
+  .foot1{
+    background-color:#000000;
+    color:white;
+    text-align:center;
+    width:600px;
+    margin:0 auto;
+    padding:10px 0;
+    font-size:14px;
+    font-family:'Poppins', Arial, sans-serif;
+  }
+  /* ===================== Banner general ===================== */
+ 
+/* ===================== Aviso importante ===================== */
+.important-note {
+  background-color: #fff2cc;
+  color: #635951;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  border: 5px solid #c7b1a1;
+  margin: 0px auto;          
+  padding: 15px 20px;         
+  width: 560px;               
+  display: block;
+  font-family: 'Poppins', Arial, sans-serif;
+  box-sizing: border-box;     
+}
+
+/* ===================== Tabla de fechas y regalos ===================== */
+.gift-table {
+  margin: 0 auto;             
+  width: 560px;               
+  border-collapse: collapse;
+  border: 1px solid #c7b1a1;
+  font-size: 14px;
+  text-align: left;
+  box-sizing: border-box;     
+}
+
+.gift-table th {
+  background-color: #c7b1a1;
+  color: #ffffff;
+  padding: 8px;
+}
+
+.gift-table td {
+  padding: 8px;
+  border-top: 1px solid #c7b1a1;
+}
+
+ /* Título TIP más compacto */
+.banner-tips-tit {
+  font-size: 20px;       
+  font-weight: 700;
+  text-align: center;
+  margin: 0;              
+  padding: 20px 0 0 0;            
+  line-height: 1.1;       
+}
+
+/* Contenedor TIP */
+.banner-tips {
+  background-color: #a1c4c7;
+  color: white;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0px 20px 12px 20px; 
+  font-family: 'Poppins', Arial, sans-serif;
+  border-radius: 5px;
+  line-height: 1.4;       
+}
+
+/* Espacio blanco encima del TIP */
+.banner-tips-space {
+  height: 20px;       
+  background-color: #ffffff; 
+}
+
+/* Banner de dos columnas completo */
+.banner-two-columns {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ede5de; 
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.two-columns-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.two-columns-table td {
+  vertical-align: top;
+  padding: 0;
+}
+
+/* Columna izquierda: imagen rellena toda la columna */
+.column-left {
+  width: 50%;
+}
+.column-left img {
+  display: block;
+  width: 100%;
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.column-right {
+  width: 50%;
+  padding: 20px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ===================== Banner Check ===================== */
+.banner-check {
+  width: 600px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  font-family: 'Poppins', Arial, sans-serif;
+  overflow: hidden;
+}
+
+.banner-check-title {
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #5c5c5c;
+}
+
+.banner-check-title .check-symbol {
+  font-size: 48px; /* Doble de la mida del text */
+  color: #c7b1a1;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.banner-check-image-container {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+.banner-check-image {
+  width: 90%;
+  aspect-ratio: 2 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.banner-check-text {
+  padding: 15px 20px 20px 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #bc6a4f;
+  text-align: center;
+}
+
+.banner-check-text p {
+  margin: 10px 0;
+}
+
+.banner-check-text strong {
+  text-transform: uppercase;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ===================== BANNER 1 (blanc) ===================== -->
+<table class="banner banner1" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+  <img src="" width="600" style="display:block;" alt="">
+</td>
+</tr>
+<tr>
+<td class="banner1-titulo">
+¿Es oro o plata?
+</td>
+</tr>
+<tr>
+<td class="banner1-subtitulo">
+Cómo identificar metales auténticos
+</td>
+</tr>
+<tr>
+<td class="banner1-texto">
+En Customima sabemos que elegir joyas auténticas es clave para asegurar valor y durabilidad. Este checklist te ayudará a diferenciar rápidamente entre oro, plata y metales no preciosos, sin necesidad de ser un experto.
+</td>
+</tr>
+</table>
+
+
+<!-- ===================== BANNER CHECK 1 ===================== -->
+<table class="banner-check">
+  <tr>
+    <td class="banner-check-title">
+      <span class="check-symbol">1.</span>Revisa los sellos y punzones
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-image-container">
+      <img class="banner-check-image" src="https://via.placeholder.com/600x300.png?text=Imagen+ejemplo" alt="Imagen ejemplo">
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-text">
+      <p><strong>Oro:</strong> Busca marcas como 375, 585, 750, 916, 999. Indican quilates y pureza.</p>
+      <p><strong>Plata:</strong> Suele llevar 925 (plata esterlina) o marcas locales de autenticidad.</p>
+    </td>
+  </tr>
+</table>
+<!-- ===================== BANNER TIPS ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+  <tr>
+    <td>
+      <div class="banner-tips">
+        <p class="banner-tips-tit">TIP ÚTIL</p>
+        <p>Un sello ilegible o ausente no garantiza autenticidad; desconfía de precios muy bajos.</p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- ===================== BANNER CHECK 2 ===================== -->
+<table class="banner-check">
+  <tr>
+    <td class="banner-check-title">
+      <span class="check-symbol">2.</span>Observa el color y brillo
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-image-container">
+      <img class="banner-check-image" src="https://via.placeholder.com/600x300.png?text=Imagen+ejemplo" alt="Imagen ejemplo">
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-text">
+      <p><strong>Oro:</strong> Color cálido, consistente y uniforme. El oro verdadero no se oxida ni pierde color.
+</p>
+      <p><strong>Plata:</strong> Brillo blanco plateado que puede oscurecerse ligeramente con el tiempo (pátina natural).</p>
+    </td>
+  </tr>
+</table>
+<!-- ===================== BANNER TIPS ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+  <tr>
+    <td>
+      <div class="banner-tips">
+        <p class="banner-tips-tit">TIP ÚTIL</p>
+        <p>Si notas zonas negras o verdosas en joyas supuestamente de oro, probablemente es baño o aleación.</p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- ===================== BANNER CHECK 3 ===================== -->
+<table class="banner-check">
+  <tr>
+    <td class="banner-check-title">
+      <span class="check-symbol">3.</span>Prueba del imán
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-image-container">
+      <img class="banner-check-image" src="https://via.placeholder.com/600x300.png?text=Imagen+ejemplo" alt="Imagen ejemplo">
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-text">
+      <p>Oro y plata no son magnéticos.</p>
+      <p>Si la pieza se atrae por un imán, contiene metales base (cobre, níquel, acero).</p>
+    </td>
+  </tr>
+</table>
+<!-- ===================== BANNER TIPS ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+  <tr>
+    <td>
+      <div class="banner-tips">
+        <p class="banner-tips-tit">TIP ÚTIL</p>
+        <p>Esta prueba no garantiza pureza, pero ayuda a descartar falsificaciones.</p>
+      </div>
+    </td>
+  </tr>
+</table>
+
+<!-- ===================== BANNER CHECK 4 ===================== -->
+<table class="banner-check">
+  <tr>
+    <td class="banner-check-title">
+      <span class="check-symbol">4.</span>Prueba del ácido o piedra de toque (opcional)
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-image-container">
+      <img class="banner-check-image" src="https://via.placeholder.com/600x300.png?text=Imagen+ejemplo" alt="Imagen ejemplo">
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-text">
+      <p><strong>Solo para joyeros o con cuidado profesional.</strong></p>
+      <p><strong>Ácido nítrico:</strong> Diferencia oro de metales comunes, y plata de imitación.</p>
+    </td>
+  </tr>
+</table>
+<!-- ===================== BANNER TIPS ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+  <tr>
+    <td>
+      <div class="banner-tips">
+        <p class="banner-tips-tit">TIP ÚTIL</p>
+        <p>Esta prueba puede dañar la pieza si se realiza sin experiencia.</p>
+      </div>
+    </td>
+  </tr>
+</table>
+<!-- ===================== BANNER CHECK 5 ===================== -->
+<table class="banner-check">
+  <tr>
+    <td class="banner-check-title">
+      <span class="check-symbol">5.</span>Peso y sonido
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-image-container">
+      <img class="banner-check-image" src="https://via.placeholder.com/600x300.png?text=Imagen+ejemplo" alt="Imagen ejemplo">
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-text">
+      <p><strong>Oro:</strong> Denso, pesado para su tamaño. Sonido “sordo” al golpearlo suavemente.</p>
+      <p><strong>Plata:</strong> Menos pesado que el oro, con un sonido más claro.</p>
+    </td>
+  </tr>
+</table>
+<!-- ===================== BANNER TIPS ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+  <tr>
+    <td>
+      <div class="banner-tips">
+        <p class="banner-tips-tit">TIP ÚTIL</p>
+        <p>Comparar con piezas auténticas conocidas ayuda a entrenar tu ojo y tacto.</p>
+      </div>
+    </td>
+  </tr>
+</table>
+<!-- ===================== BANNER CHECK 6 ===================== -->
+<table class="banner-check">
+  <tr>
+    <td class="banner-check-title">
+      <span class="check-symbol">6.</span>Consulta al experto
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-image-container">
+      <img class="banner-check-image" src="https://via.placeholder.com/600x300.png?text=Imagen+ejemplo" alt="Imagen ejemplo">
+    </td>
+  </tr>
+  <tr>
+    <td class="banner-check-text">
+      <p>Para piezas de alto valor o antigüedades, acude a un joyero certificado.</p>
+      <p>Llevar un certificado de autenticidad aumenta la confianza y el valor de reventa.</p>
+    </td>
+  </tr>
+</table>
+
+<!-- Contenedor blanco de 600px -->
+<table width="600" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="background-color:#ffffff; margin:0 auto;">
+  <tr>
+    <td align="center">
+      
+      <!-- Tu tabla gift-table -->
+      <table class="gift-table" cellpadding="0" cellspacing="0" width="560" bgcolor="#ffffff" style="font-size:0.8rem; background-color:#ffffff; border-collapse:collapse; border:1px solid #c7b1a1;">
+        <tr>
+          <th colspan="4" style="background-color:#c7b1a1; color:#ffffff; padding:8px; text-align: center; font-size: larger; font-weight: 600; color: black">RESUMEN RÁPIDO</th>
+        </tr>
+        <tr>
+          <th style="background-color:#c7b1a1; color:#ffffff; padding:8px;">Característica</th>
+          <th style="background-color:#c7b1a1; color:#ffffff; padding:8px;">Oro auténtico</th>
+          <th style="background-color:#c7b1a1; color:#ffffff; padding:8px;">Plata auténtica</th>
+          <th style="background-color:#c7b1a1; color:#ffffff; padding:8px;">Metales falsos</th>
+        </tr>
+        <tr>
+          <td style="background-color:#ffffff; padding:8px;"><span class="check-symbol">✔</span><strong>Sello/punzón</strong></td>
+          <td style="background-color:#ffffff; padding:8px;">375–999</td>
+          <td style="background-color:#ffffff; padding:8px;">925</td>
+          <td style="background-color:#ffffff; padding:8px;">Ausente o ilegible</td>
+        </tr>
+<tr>
+    <td><span class="check-symbol">✔</span><strong>Color</strong></td>
+    <td>Amarillo cálido</td>
+    <td>Blanco plateado</td>
+    <td>Verde/negro, desigual</td>
+  </tr>
+  <tr>
+    <td><span class="check-symbol">✔</span><strong>Reacción al imán</strong></td>
+    <td>No magnético</td>
+    <td>No magnético</td>
+    <td>Sí magnético</td>
+  </tr>
+  <tr>
+    <td><span class="check-symbol">✔</span><strong>Peso</strong></td>
+    <td>Pesado/denso</td>
+    <td>Medio</td>
+    <td>Ligero</td>
+  </tr>
+  <tr>
+    <td><span class="check-symbol">✔</span><strong>Sonido</strong></td>
+    <td>Sordo</td>
+    <td>Claro</td>
+    <td>Metálico ligero</td>
+  </tr>
+  </table>
+      </table>
+
+    </td>
+  </tr>
+</table>
+<!-- ===================== ESPACIO BLANCO ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="height:30px; background-color:#ffffff;">&nbsp;</td>
+  </tr>
+</table>
+
+<!-- Contenedor blanco de 600px -->
+<table width="600" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="background-color:#ffffff; margin:0 auto;">
+  <tr>
+    <td align="center" style="background-color:#ffffff;">
+
+      <!-- Important Note dentro de contenedor blanco -->
+      <table cellpadding="0" cellspacing="0" width="560" style="background-color:#ffffff; margin:0 auto;">
+        <tr>
+          <td align="center" style="background-color:#ffffff; padding:10px;">
+            
+            <table cellpadding="0" cellspacing="0" width="100%" class="important-note" style="background-color:#fff2cc; border:5px solid #c7b1a1; padding:15px 20px; font-family:'Poppins', Arial, sans-serif; font-size:16px; font-weight:600; text-align:center; box-sizing:border-box;">
+              <tr>
+                <td>
+                  Con este checklist podrás identificar rápidamente si tu joya es de oro o plata auténtica, evitando compras inseguras y eligiendo piezas de calidad que duran toda la vida.
+                </td>
+              </tr>
+            </table>
+
+          </td>
+        </tr>
+      </table>
+
+    </td>
+  </tr>
+</table>
+
+<!-- ===================== ESPACIO BLANCO ===================== -->
+<table class="banner" cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="height:30px; background-color:#ffffff;">&nbsp;</td>
+  </tr>
+</table>
+
+<!-- ===================== FOOTER SIMPLE ===================== -->
+ 
+<table class="foot1" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>
+      &copy; 2026 CUSTOMIMA
+    </td>
+  </tr>
+</table>
+
+
+</body>
+</html>
