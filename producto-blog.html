@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Producto</title>
+
+<!-- Google Fonts - Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    padding: 40px;
+    text-align: center;
+}
+
+/* TITULO PRINCIPAL */
+.titulo {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    font-weight: 100;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #5c5c5c;
+    margin-bottom: 20px;
+}
+
+/* SUBTITULO */
+.subtitulo-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #efefef;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+
+.subtitulo-box span {
+    color: #5c5c5c;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* IMAGEN */
+.producto-img {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* TITULO IMAGEN */
+.titulo-imagen {
+    font-size: 15px;
+    font-weight: 100;
+    color: #5c5c5c;
+    margin-bottom: 10px;
+}
+
+/* PRECIO */
+.precio {
+    font-size: 15px;
+    font-weight: 100;
+    color: #5c5c5c;
+    margin-bottom: 25px;
+}
+
+/* BOTONES */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 14px;
+    margin: 10px 5px;
+    border-radius: 0; /* esquinas rectas */
+}
+
+/* BOTON 1 */
+.btn-personalizar {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* BOTON 2 */
+.btn-padre {
+    background-color: #5c5c5c;
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+</style>
+
+</head>
+<body>
+
+<h1 class="titulo">Nombre del Producto</h1>
+
+<div class="subtitulo-box">
+    <!-- Icono camión -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#5c5c5c" viewBox="0 0 24 24">
+        <path d="M20 8h-3V4H3v13h2a3 3 0 006 0h2a3 3 0 006 0h2v-5l-3-4zM6 18a1 1 0 110-2 1 1 0 010 2zm12 0a1 1 0 110-2 1 1 0 010 2zm1-7h-4V6h1.5L19 9.5V11z"/>
+    </svg>
+    <span>Recíbelo en 48h</span>
+</div>
+
+<div>
+    <img src="https://via.placeholder.com/400x400" alt="Imagen Producto" class="producto-img">
+</div>
+
+<h2 class="titulo-imagen">Título de la Imagen</h2>
+<p class="precio">€99,00</p>
+
+<div><a href="#" class="btn btn-personalizar">Personalizar</a></div>
+<div><a href="#" class="btn btn-padre">Ver joyas para el día del padre</a></div>
+
+</body>
+</html>
