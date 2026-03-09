@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+margin:0;
+padding:0;
+background:#f0f0f0;
+font-family:poppins;
+}
+
+.container{
+width:600px;
+margin:0 auto;
+background:#ffffff;
+}
+
+.titol_princ{
+color:#c7b1a1;
+text-transform:uppercase;
+font-weight:400;
+letter-spacing:1.2px;
+font-size:30px;
+margin:0;
+}
+
+.subtitol_princ{
+color:#5c5c5c;
+text-transform:uppercase;
+font-weight:400;
+letter-spacing:1.6px;
+font-size:18px;
+margin: 0 -10px -20px -10px;}
+
+.texte_princ{
+color:#5c5c5c;
+font-weight:300;
+font-size:14px;
+line-height:1.6;
+margin:-5px 0 ;
+}
+
+.imatge{
+    max-width:100%;
+    height:auto;
+    object-fit:cover;
+}
+
+.num_titol{
+color:#c7b1a1;
+font-weight:700;
+font-size:48px;
+vertical-align:-10px;
+line-height:1;
+}
+
+.titol{
+color:#5c5c5c;
+font-size:22px;
+font-weight:700;
+line-height:.5;
+vertical-align:baseline;
+}
+
+.tip_taula {
+    background-color:#a1c4c7;
+    color:white;
+    text-align:center;
+    width:90%;
+    margin:0 auto;
+    font-weight:500;
+    font-size:16px;
+    padding:0px 20px 0px 20px;
+    font-family:'Poppins', Arial, sans-serif;
+    border-radius:5px;
+    line-height:1.4;
+}
+
+.tip_tit {
+    font-weight:700;
+    font-size:1.4rem;
+    margin:0 0 5px 0; /* separació amb el text */
+}
+
+.tip_txt {
+    font-size:1rem;
+    line-height:1.4;
+    margin:0; /* elimina espais extra */
+}
+
+/* Taules amb línies per ORO/PLATA */
+.mat_taula {
+    width:90%;
+    max-width:560px;
+    margin:0 auto;
+    border-collapse:collapse;
+    font-size:14px;
+    text-align:left;
+    box-sizing:border-box;
+    border:1px solid #c7b1a1; /* border extern només per mat_taula */
+}
+
+.mat_taula th{
+    background-color:#c7b1a1;
+    color:#ffffff;
+    padding:8px;
+    text-align:center;
+}
+
+.mat_taula td{
+    padding:8px;
+    border-top: 1px solid #c7b1a1; /* línia horitzontal entre files */
+}
+.mat_tit{
+    font-weight: 700;
+    vertical-align: top;
+    background-color: #f4f4f4;
+}
+
+.nota-i{
+    font-size:0.7rem;
+    font-style:italic;
+}
+.nota-b{
+    font-size:0.7rem;
+    font-weight:bold;
+}
+.nota{
+    font-size:0.7rem;
+}
+.nota_imp_taula{
+width:100%;
+max-width:560px;
+margin:0 auto;
+}
+
+.nota_imp{
+background-color:#fff2cc;
+color:#635951;
+font-weight:600;
+font-size:16px;
+text-align:center;
+border:5px solid #c7b1a1;
+margin:0 auto;
+padding:15px 20px;
+width:100%;
+max-width:560px;
+box-sizing:border-box;
+}
+
+.peu{
+background-color:#000000;
+color:white;
+text-align:center;
+max-width:600px;
+width:100%;
+margin:0 auto;
+padding:10px 0;
+font-size:14px;
+}
+
+@media only screen and (max-width:620px){
+
+.container{
+width:100% !important;
+}
+
+.tip_taula{
+width:90% !important;
+}
+
+.nota_imp{
+width:90% !important;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+
+  <!-- ENCAPÇALAMENT -->
+<table width="100%" cellpadding="0" cellspacing="0" style="border:0;">
+<tr>
+<td style="text-align: center;">
+
+<table class="container" cellpadding="0" cellspacing="0" style="border:0;">
+
+<tr>
+<td style="text-align: center; padding:40px 30px 10px 30px;">
+<p class="titol_princ">¿Es oro o plata?</p>
+</td>
+</tr>
+
+<tr>
+<td style="border:0; padding:10px 30px 20px 30px;">
+<p class="subtitol_princ">Cómo identificar metales auténticos</p>
+</td>
+</tr>
+
+<tr>
+<td style="text-align: center; padding:10px 40px 30px 40px;">
+<p class="texte_princ">
+En Customima sabemos que elegir joyas auténticas es clave para asegurar valor y durabilidad. Este checklist te ayudará a diferenciar rápidamente entre oro, plata y metales no preciosos, sin necesidad de ser un experto.
+</p>
+</td>
+</tr>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- TITOL -->
+<tr>
+<td style="text-align: center; padding:10px 40px 20px 40px;">
+<span class="num_titol">1. </span>
+<span class="titol"> Revisa los sellos y punzones</span>
+</td>
+</tr>
+
+
+
+
+<!-- IMATGE -->
+<tr>
+    <td>
+      <img class="imatge" src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/sello_24ad797f-7b0c-4225-bd96-dab22027aec9.jpg?v=1772180747" alt="Sellos y punzones en joyas de oro y plata">
+    </td>
+  </tr>
+
+
+<!-- TAULA 1 -->
+<tr><td>
+<table class="mat_taula" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td class="mat_tit">ORO</td>
+      <td>
+        <span class="nota">Sistema en quilates (K o KT)<br>Oro puro es 24K</span>
+        <ul>
+          <li>24K → 99.9% oro puro</li>
+          <li>18K → 75% oro</li>
+          <li>14K → 58.5% oro</li>
+          <li>10K → 41.7% oro</li>
+        </ul>
+        <span class="nota">Ejemplo de sello: 18K, 14KT <br>Sistema milésimal (número de tres cifras) Indica las milésimas de pureza.</span>
+        <ul>
+          <li>999 → oro casi puro</li>
+          <li>750 → 75% oro (equivale a 18K)</li>
+          <li>585 → 14K</li>
+          <li>417 → 10K</li>
+        </ul>
+        <strong>📌 Otros punzones en oro:</strong><br>
+        <span class="nota-b">Marca del fabricante</span> <span class="nota">→ identifica al taller o empresa.</span><br>
+        <span class="nota-b">Marca del país</span> <span class="nota">→ en algunos países se incluye un símbolo oficial.</span><br>
+        <span class="nota">En países europeos regulados, puede incluir el sello oficial de contraste (por ejemplo en España).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATA</td>
+      <td>
+        <ul>
+          <li>999 → Plata fina (99.9%)</li>
+          <li>925 → Plata de ley (92.5%) – la más común en joyería</li>
+          <li>900 → 90% plata</li>
+        </ul>
+        <span class="nota">Un sello muy común es: "925" o "Sterling" (plata esterlina)<br>El término "Sterling Silver" indica 92.5% de plata y 7.5% de otros metales (normalmente cobre).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATINO</td>
+      <td>
+        <ul>
+          <li>999 → 99.9% platino</li>
+          <li>950 → 95% platino (muy común en joyería fina)</li>
+          <li>900 → 90% platino</li>
+        </ul>
+        <span class="nota">Puede aparecer como:</span>
+        <ul>
+          <li>PT950</li>
+          <li>PLAT</li>
+          <li>PLATINUM</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">ACERO</td>
+      <td>
+        <ul>
+          <li>316L → Acero quirúrgico <span class="nota-i">(muy resistente a corrosión y alergias)</span></li>
+          <li>304 → Acero inoxidable estándar</li>
+        </ul>
+        <span class="nota">El acero no se marca por pureza, sino por tipo de aleación.</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- CONSELL -->
+<tr>
+<td style="border:0; padding:10px 20px 40px 20px;">
+
+<table class="tip_taula" cellpadding="0" cellspacing="0" style="border:0;">
+  <tr>
+    <td style="padding:20px 10px; text-align:center;">
+      <p class="tip_tit">CONSEJO</p>
+      <p class="tip_txt">
+        Un sello ilegible o ausente no garantiza autenticidad; desconfía de precios muy bajos.
+      </p>
+    </td>
+  </tr>
+</table>
+
+</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- TAULA 1 -->
+<tr><td>
+<table class="mat_taula" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td class="mat_tit">ORO</td>
+      <td>
+        <span class="nota">Sistema en quilates (K o KT)<br>Oro puro es 24K</span>
+        <ul>
+          <li>24K → 99.9% oro puro</li>
+          <li>18K → 75% oro</li>
+          <li>14K → 58.5% oro</li>
+          <li>10K → 41.7% oro</li>
+        </ul>
+        <span class="nota">Ejemplo de sello: 18K, 14KT <br>Sistema milésimal (número de tres cifras) Indica las milésimas de pureza.</span>
+        <ul>
+          <li>999 → oro casi puro</li>
+          <li>750 → 75% oro (equivale a 18K)</li>
+          <li>585 → 14K</li>
+          <li>417 → 10K</li>
+        </ul>
+        <strong>📌 Otros punzones en oro:</strong><br>
+        <span class="nota-b">Marca del fabricante</span> <span class="nota">→ identifica al taller o empresa.</span><br>
+        <span class="nota-b">Marca del país</span> <span class="nota">→ en algunos países se incluye un símbolo oficial.</span><br>
+        <span class="nota">En países europeos regulados, puede incluir el sello oficial de contraste (por ejemplo en España).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATA</td>
+      <td>
+        <ul>
+          <li>999 → Plata fina (99.9%)</li>
+          <li>925 → Plata de ley (92.5%) – la más común en joyería</li>
+          <li>900 → 90% plata</li>
+        </ul>
+        <span class="nota">Un sello muy común es: "925" o "Sterling" (plata esterlina)<br>El término "Sterling Silver" indica 92.5% de plata y 7.5% de otros metales (normalmente cobre).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATINO</td>
+      <td>
+        <ul>
+          <li>999 → 99.9% platino</li>
+          <li>950 → 95% platino (muy común en joyería fina)</li>
+          <li>900 → 90% platino</li>
+        </ul>
+        <span class="nota">Puede aparecer como:</span>
+        <ul>
+          <li>PT950</li>
+          <li>PLAT</li>
+          <li>PLATINUM</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">ACERO</td>
+      <td>
+        <ul>
+          <li>316L → Acero quirúrgico <span class="nota-i">(muy resistente a corrosión y alergias)</span></li>
+          <li>304 → Acero inoxidable estándar</li>
+        </ul>
+        <span class="nota">El acero no se marca por pureza, sino por tipo de aleación.</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- CONSELL -->
+<tr>
+<td style="border:0; padding:10px 20px 40px 20px;">
+
+<table class="tip_taula" cellpadding="0" cellspacing="0" style="border:0;">
+  <tr>
+    <td style="padding:20px 10px; text-align:center;">
+      <p class="tip_tit">CONSEJO</p>
+      <p class="tip_txt">
+        Un sello ilegible o ausente no garantiza autenticidad; desconfía de precios muy bajos.
+      </p>
+    </td>
+  </tr>
+</table>
+
+</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+<!-- TAULA 1 -->
+<tr><td>
+<table class="mat_taula" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td class="mat_tit">ORO</td>
+      <td>
+        <span class="nota">Sistema en quilates (K o KT)<br>Oro puro es 24K</span>
+        <ul>
+          <li>24K → 99.9% oro puro</li>
+          <li>18K → 75% oro</li>
+          <li>14K → 58.5% oro</li>
+          <li>10K → 41.7% oro</li>
+        </ul>
+        <span class="nota">Ejemplo de sello: 18K, 14KT <br>Sistema milésimal (número de tres cifras) Indica las milésimas de pureza.</span>
+        <ul>
+          <li>999 → oro casi puro</li>
+          <li>750 → 75% oro (equivale a 18K)</li>
+          <li>585 → 14K</li>
+          <li>417 → 10K</li>
+        </ul>
+        <strong>📌 Otros punzones en oro:</strong><br>
+        <span class="nota-b">Marca del fabricante</span> <span class="nota">→ identifica al taller o empresa.</span><br>
+        <span class="nota-b">Marca del país</span> <span class="nota">→ en algunos países se incluye un símbolo oficial.</span><br>
+        <span class="nota">En países europeos regulados, puede incluir el sello oficial de contraste (por ejemplo en España).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATA</td>
+      <td>
+        <ul>
+          <li>999 → Plata fina (99.9%)</li>
+          <li>925 → Plata de ley (92.5%) – la más común en joyería</li>
+          <li>900 → 90% plata</li>
+        </ul>
+        <span class="nota">Un sello muy común es: "925" o "Sterling" (plata esterlina)<br>El término "Sterling Silver" indica 92.5% de plata y 7.5% de otros metales (normalmente cobre).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATINO</td>
+      <td>
+        <ul>
+          <li>999 → 99.9% platino</li>
+          <li>950 → 95% platino (muy común en joyería fina)</li>
+          <li>900 → 90% platino</li>
+        </ul>
+        <span class="nota">Puede aparecer como:</span>
+        <ul>
+          <li>PT950</li>
+          <li>PLAT</li>
+          <li>PLATINUM</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">ACERO</td>
+      <td>
+        <ul>
+          <li>316L → Acero quirúrgico <span class="nota-i">(muy resistente a corrosión y alergias)</span></li>
+          <li>304 → Acero inoxidable estándar</li>
+        </ul>
+        <span class="nota">El acero no se marca por pureza, sino por tipo de aleación.</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- CONSELL -->
+<tr>
+<td style="border:0; padding:10px 20px 40px 20px;">
+
+<table class="tip_taula" cellpadding="0" cellspacing="0" style="border:0;">
+  <tr>
+    <td style="padding:20px 10px; text-align:center;">
+      <p class="tip_tit">CONSEJO</p>
+      <p class="tip_txt">
+        Un sello ilegible o ausente no garantiza autenticidad; desconfía de precios muy bajos.
+      </p>
+    </td>
+  </tr>
+</table>
+
+</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+<!-- TAULA 1 -->
+<tr><td>
+<table class="mat_taula" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td class="mat_tit">ORO</td>
+      <td>
+        <span class="nota">Sistema en quilates (K o KT)<br>Oro puro es 24K</span>
+        <ul>
+          <li>24K → 99.9% oro puro</li>
+          <li>18K → 75% oro</li>
+          <li>14K → 58.5% oro</li>
+          <li>10K → 41.7% oro</li>
+        </ul>
+        <span class="nota">Ejemplo de sello: 18K, 14KT <br>Sistema milésimal (número de tres cifras) Indica las milésimas de pureza.</span>
+        <ul>
+          <li>999 → oro casi puro</li>
+          <li>750 → 75% oro (equivale a 18K)</li>
+          <li>585 → 14K</li>
+          <li>417 → 10K</li>
+        </ul>
+        <strong>📌 Otros punzones en oro:</strong><br>
+        <span class="nota-b">Marca del fabricante</span> <span class="nota">→ identifica al taller o empresa.</span><br>
+        <span class="nota-b">Marca del país</span> <span class="nota">→ en algunos países se incluye un símbolo oficial.</span><br>
+        <span class="nota">En países europeos regulados, puede incluir el sello oficial de contraste (por ejemplo en España).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATA</td>
+      <td>
+        <ul>
+          <li>999 → Plata fina (99.9%)</li>
+          <li>925 → Plata de ley (92.5%) – la más común en joyería</li>
+          <li>900 → 90% plata</li>
+        </ul>
+        <span class="nota">Un sello muy común es: "925" o "Sterling" (plata esterlina)<br>El término "Sterling Silver" indica 92.5% de plata y 7.5% de otros metales (normalmente cobre).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATINO</td>
+      <td>
+        <ul>
+          <li>999 → 99.9% platino</li>
+          <li>950 → 95% platino (muy común en joyería fina)</li>
+          <li>900 → 90% platino</li>
+        </ul>
+        <span class="nota">Puede aparecer como:</span>
+        <ul>
+          <li>PT950</li>
+          <li>PLAT</li>
+          <li>PLATINUM</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">ACERO</td>
+      <td>
+        <ul>
+          <li>316L → Acero quirúrgico <span class="nota-i">(muy resistente a corrosión y alergias)</span></li>
+          <li>304 → Acero inoxidable estándar</li>
+        </ul>
+        <span class="nota">El acero no se marca por pureza, sino por tipo de aleación.</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- CONSELL -->
+<tr>
+<td style="border:0; padding:10px 20px 40px 20px;">
+
+<table class="tip_taula" cellpadding="0" cellspacing="0" style="border:0;">
+  <tr>
+    <td style="padding:20px 10px; text-align:center;">
+      <p class="tip_tit">CONSEJO</p>
+      <p class="tip_txt">
+        Un sello ilegible o ausente no garantiza autenticidad; desconfía de precios muy bajos.
+      </p>
+    </td>
+  </tr>
+</table>
+
+</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+<!-- TAULA 1 -->
+<tr><td>
+<table class="mat_taula" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td class="mat_tit">ORO</td>
+      <td>
+        <span class="nota">Sistema en quilates (K o KT)<br>Oro puro es 24K</span>
+        <ul>
+          <li>24K → 99.9% oro puro</li>
+          <li>18K → 75% oro</li>
+          <li>14K → 58.5% oro</li>
+          <li>10K → 41.7% oro</li>
+        </ul>
+        <span class="nota">Ejemplo de sello: 18K, 14KT <br>Sistema milésimal (número de tres cifras) Indica las milésimas de pureza.</span>
+        <ul>
+          <li>999 → oro casi puro</li>
+          <li>750 → 75% oro (equivale a 18K)</li>
+          <li>585 → 14K</li>
+          <li>417 → 10K</li>
+        </ul>
+        <strong>📌 Otros punzones en oro:</strong><br>
+        <span class="nota-b">Marca del fabricante</span> <span class="nota">→ identifica al taller o empresa.</span><br>
+        <span class="nota-b">Marca del país</span> <span class="nota">→ en algunos países se incluye un símbolo oficial.</span><br>
+        <span class="nota">En países europeos regulados, puede incluir el sello oficial de contraste (por ejemplo en España).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATA</td>
+      <td>
+        <ul>
+          <li>999 → Plata fina (99.9%)</li>
+          <li>925 → Plata de ley (92.5%) – la más común en joyería</li>
+          <li>900 → 90% plata</li>
+        </ul>
+        <span class="nota">Un sello muy común es: "925" o "Sterling" (plata esterlina)<br>El término "Sterling Silver" indica 92.5% de plata y 7.5% de otros metales (normalmente cobre).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATINO</td>
+      <td>
+        <ul>
+          <li>999 → 99.9% platino</li>
+          <li>950 → 95% platino (muy común en joyería fina)</li>
+          <li>900 → 90% platino</li>
+        </ul>
+        <span class="nota">Puede aparecer como:</span>
+        <ul>
+          <li>PT950</li>
+          <li>PLAT</li>
+          <li>PLATINUM</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">ACERO</td>
+      <td>
+        <ul>
+          <li>316L → Acero quirúrgico <span class="nota-i">(muy resistente a corrosión y alergias)</span></li>
+          <li>304 → Acero inoxidable estándar</li>
+        </ul>
+        <span class="nota">El acero no se marca por pureza, sino por tipo de aleación.</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- CONSELL -->
+<tr>
+<td style="border:0; padding:10px 20px 40px 20px;">
+
+<table class="tip_taula" cellpadding="0" cellspacing="0" style="border:0;">
+  <tr>
+    <td style="padding:20px 10px; text-align:center;">
+      <p class="tip_tit">CONSEJO</p>
+      <p class="tip_txt">
+        Un sello ilegible o ausente no garantiza autenticidad; desconfía de precios muy bajos.
+      </p>
+    </td>
+  </tr>
+</table>
+
+</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+<!-- TAULA 1 -->
+<tr><td>
+<table class="mat_taula" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+      <td class="mat_tit">ORO</td>
+      <td>
+        <span class="nota">Sistema en quilates (K o KT)<br>Oro puro es 24K</span>
+        <ul>
+          <li>24K → 99.9% oro puro</li>
+          <li>18K → 75% oro</li>
+          <li>14K → 58.5% oro</li>
+          <li>10K → 41.7% oro</li>
+        </ul>
+        <span class="nota">Ejemplo de sello: 18K, 14KT <br>Sistema milésimal (número de tres cifras) Indica las milésimas de pureza.</span>
+        <ul>
+          <li>999 → oro casi puro</li>
+          <li>750 → 75% oro (equivale a 18K)</li>
+          <li>585 → 14K</li>
+          <li>417 → 10K</li>
+        </ul>
+        <strong>📌 Otros punzones en oro:</strong><br>
+        <span class="nota-b">Marca del fabricante</span> <span class="nota">→ identifica al taller o empresa.</span><br>
+        <span class="nota-b">Marca del país</span> <span class="nota">→ en algunos países se incluye un símbolo oficial.</span><br>
+        <span class="nota">En países europeos regulados, puede incluir el sello oficial de contraste (por ejemplo en España).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATA</td>
+      <td>
+        <ul>
+          <li>999 → Plata fina (99.9%)</li>
+          <li>925 → Plata de ley (92.5%) – la más común en joyería</li>
+          <li>900 → 90% plata</li>
+        </ul>
+        <span class="nota">Un sello muy común es: "925" o "Sterling" (plata esterlina)<br>El término "Sterling Silver" indica 92.5% de plata y 7.5% de otros metales (normalmente cobre).</span>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">PLATINO</td>
+      <td>
+        <ul>
+          <li>999 → 99.9% platino</li>
+          <li>950 → 95% platino (muy común en joyería fina)</li>
+          <li>900 → 90% platino</li>
+        </ul>
+        <span class="nota">Puede aparecer como:</span>
+        <ul>
+          <li>PT950</li>
+          <li>PLAT</li>
+          <li>PLATINUM</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td class="mat_tit">ACERO</td>
+      <td>
+        <ul>
+          <li>316L → Acero quirúrgico <span class="nota-i">(muy resistente a corrosión y alergias)</span></li>
+          <li>304 → Acero inoxidable estándar</li>
+        </ul>
+        <span class="nota">El acero no se marca por pureza, sino por tipo de aleación.</span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- CONSELL -->
+<tr>
+<td style="border:0; padding:10px 20px 40px 20px;">
+
+<table class="tip_taula" cellpadding="0" cellspacing="0" style="border:0;">
+  <tr>
+    <td style="padding:20px 10px; text-align:center;">
+      <p class="tip_tit">CONSEJO</p>
+      <p class="tip_txt">
+        Un sello ilegible o ausente no garantiza autenticidad; desconfía de precios muy bajos.
+      </p>
+    </td>
+  </tr>
+</table>
+
+</td>
+</tr>
+
+</table>
+
+
+
+
+
+
+
+
+
+
+<!-- PEU -->
+<table class="container" cellpadding="0" cellspacing="0" style="border:0;">
+<tr>
+<td class="peu">
+&copy; 2026 CUSTOMIMA
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
