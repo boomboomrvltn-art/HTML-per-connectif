@@ -4,646 +4,303 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Día de la Madre - Customima</title>
-
-<!-- Google Fonts Poppins -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-  body{
-    margin:0;
-    padding:0;
-    font-family:'Poppins', Arial, sans-serif;
-    background-color:#f0f0f0; /* fons gris global */
-  }
-
-  /* ===================== Banner general ===================== */
-  .banner{
-    width:100%;
-    max-width:600px;
-    margin:0 auto; 
-  }
-
-  /* Banner 1 */
-  .banner1{
-    background-color:#ffffff; 
-    color:#5c5c5c;
-    text-align:center;
-  }
-  .banner1-titulo{
-    font-size:30px;
-    color:#c7b1a1;
-    font-weight:300;
-    letter-spacing:1.2px;
-    text-transform:uppercase;
-    padding:20px 20px 10px 20px;
-  }
-  .banner1-subtitulo{
-    font-size:22px;
-    text-transform:uppercase;
-    letter-spacing:1.2px;
-    padding:0px 25px 0px 25px;
-    color:#5c5c5c;
-  }
-  .banner1-subtitulo2{
-    font-size:18px;
-    text-transform:uppercase;
-    letter-spacing:1.2px;
-    padding:0px 25px 20px 25px;
-    color:#5c5c5c;
-  }
-  
-  .banner1-texto{
-    font-size:16px;
-    line-height:1.6;
-    padding:0 30px 30px 30px;
-  }
-
-  /* Banner 2 */
-  .banner2{
-    background-color:#c7b1a1;
-    color:white;
-    text-align:center;
-    padding:20px 0px 0px 0px;
-  }
-  .banner2-subtitulo{
-    font-size:22px;
-    text-transform:uppercase;
-    letter-spacing:1.2px;
-    padding:0px 25px 0px 25px;
-  }
-    .banner2-subtitulo2{
-    font-size:18px;
-    letter-spacing:1.2px;
-    padding:0px 25px 20px 25px;
-  }
-  .banner2-lista{
-    font-size:16px;
-    line-height:1.6;
-    padding:0 60px 0px 60px;
-    text-align:left;
-  }
-  .banner2-final{
-    font-size:16px;
-    padding:0px 35px;
-    font-weight: 600;
-  }
-
-  /* Bloque blanco interno del banner2 */
-  .banner-block-white{
-    width:65%;
-    max-width:100%;
-    margin:0 auto;
-    background-color:#ffffff;
-    color:#c7b1a1;
-    padding: 20px 20px 10px 20px;
-    text-align:center;
-    border-radius:12px;
-    line-height: 1.2px;
-  }
-
-  /* Estil botó personalitzat */
-  .btn-patos {
-    background-color: #bc6a4f;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Poppins', Arial, sans-serif;
-    display: block;
-    padding: 12px 25px;
-    border-radius: 6px;
-    text-align: center;
-  }
-
-  /* Contenidor del botó per centrar-lo i que no ocupi tot l'ample */
-  .btn-container {
-    text-align: center;
-    padding: 20px 0;
-  }
-
-  /* ===================== Footer simple ===================== */
-  .foot1{
-    background-color:#000000;
-    color:white;
-    text-align:center;
-    width:100%;
-    max-width:600px;
-    margin:0 auto;
-    padding:10px 0;
-    font-size:14px;
-    font-family:'Poppins', Arial, sans-serif;
-  }
-
-  /* ===================== Aviso importante ===================== */
-.important-note {
-  background-color: #fff2cc;
-  color: #635951;
-  font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  border: 5px solid #c7b1a1;
-  margin: 0px auto;          
-  padding: 15px 20px;         
-  width: 100%;
-  max-width:560px;               
-  display: block;
-  border-radius: 0px;
-  font-family: 'Poppins', Arial, sans-serif;
-  box-sizing: border-box;     
-}
-
-.gift-table {
-  margin: 0 auto;             
-  width: 100%;
-  max-width:560px;               
-  border-collapse: collapse;
-  border: 1px solid #c7b1a1;
-  font-size: 14px;
-  text-align: left;
-  box-sizing: border-box;     
-}
-
-.gift-table th {
-  background-color: #c7b1a1;
-  color: #ffffff;
-  padding: 8px;
-}
-
-.gift-table td {
-  padding: 8px;
-  border-top: 1px solid #c7b1a1;
-}
-
-.banner-tips-tit {
-  font-size: 20px;       
-  font-weight: 700;
-  text-align: center;
-  margin: 0;              
-  padding: 20px 0 0 0;            
-  line-height: 1.1;       
-}
-
-.banner-tips {
-  background-color: #a1c4c7;
-  color: white;
-  text-align: center;
-  width: 80%;
-  max-width:100%;
-  margin: 0 auto;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 0px 20px 12px 20px; 
-  font-family: 'Poppins', Arial, sans-serif;
-  border-radius: 5px;
-  line-height: 1.4;       
-}
-
-.banner-tips-space {
-  height: 20px;       
-  background-color: #ffffff; 
-}
-
-.banner-two-columns {
-  width: 100%;
-  max-width:600px;
-  margin: 0 auto;
-  background-color: #ede5de; 
-  font-family: 'Poppins', Arial, sans-serif;
-}
-
-.two-columns-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.two-columns-table td {
-  vertical-align: top;
-  padding: 0;
-}
-
-.column-left, .column-right {
-  width: 50%;
-}
-
-.column-left img {
-  display: block;
-  width: 100%;
-  height: auto; 
-  object-fit: cover; 
-}
-
-/* ======== IMATGES GENERAL ======== */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ======== MEDIA QUERIES PER MÒBIL ======== */
-@media screen and (max-width:480px){
-  .banner1-titulo{font-size:22px; padding:15px 10px 10px 10px !important;}
-  .banner1-subtitulo, .banner1-subtitulo2{font-size:16px; padding:0 10px !important;}
-  .banner1-texto{font-size:14px; padding:0 10px 15px 10px !important;}
-  .banner2-lista{padding:0 15px !important; font-size:14px !important;}
-  .banner-block-white{width:90% !important; padding:15px !important;}
-  .btn-patos{width:90% !important; font-size:14px !important; padding:10px !important;}
-  .two-columns-table td{display:block !important;}
-  .gift-table, .gift-table th, .gift-table td{font-size:12px !important;}
-}
-
-
-
-@media screen and (max-width:480px){
-  @media screen and (max-width:480px){
-
-  .two-columns-table{
-    table-layout:fixed;
-  }
-
-  .column-left,
-  .column-right{
-    display:block;
-    width:100% !important;
-  }
-
-  .column-left{
-    padding:0 !important;
-  }
-
-  .column-left img{
-    width:100% !important;
-    height:auto !important;
-    aspect-ratio: 1 / 1;
-    object-fit:cover;
-    display:block;
-  }
-
-}
-  .column-right h2 {
-    font-size: 16px !important;
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
-  }
-  .column-right ul {
-    padding-left: 20px !important;
-    font-size: 14px !important;
-    margin: 0 0 10px 0 !important;
-  }
-    .important-note{
-    width: 90% !important;          /* deja aire a los lados */
-    margin: 16px  auto !important;   /* más espacio arriba y abajo */
-    padding: 16px !important;       /* más aire interno */
-    font-size: 14px !important;     /* opcional: un poco más compacto */
-  }
-}
-
-
-/* ====== TARJETAS RESPONSIVE ====== */
-.card-col img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* ====== TARJETAS RESPONSIVE AJUSTADES ====== */
-@media screen and (max-width:480px){
-  .card-col {
-    display: block;                 /* cada imatge a una fila */
-    width: 65% !important;          /* ocupen 70% de l'amplada de la pantalla */
-    margin: 0 auto 15px auto;       /* centrades i amb espai de 15px entre elles */
-  }
-
-  .card-col img {
-    width: 100%;                     /* imatge ocupa tot l'amplada de la cel·la */
-    height: auto;
-    display: block;
-  }
-}
-
-</style>
 </head>
 
 <body>
 
-<!-- ===================== BANNER 1 (blanc) ===================== -->
-<table class="banner banner1" cellpadding="0" cellspacing="0">
+<table width="100%" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">
+
+<table width="600" cellpadding="0" cellspacing="0">
+
 <tr>
 <td>
-  <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/Guia_dia_madre.jpg?v=1771336506" alt="Día de la Madre">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/Guia_dia_madre.jpg?v=1771336506" alt="Día de la Madre" width="600">
 </td>
 </tr>
+
 <tr>
-<td class="banner1-titulo">
-GUÍA ESPECIAL DÍA DE LA MADRE
+<td align="center">
+<h1>GUÍA ESPECIAL DÍA DE LA MADRE</h1>
 </td>
 </tr>
+
 <tr>
-<td class="banner1-subtitulo">
-Sorprende a mamá con la joya más emotiva y <strong>personalizada gratis</strong>
+<td align="center">
+<h2>Sorprende a mamá con la joya más emotiva y <strong>personalizada gratis</strong></h2>
 </td>
 </tr>
+
 <tr>
-<td class="banner1-texto">
+<td>
 En Customima, sabemos que el Día de la Madre es un momento especial. Esta guía te mostrará cómo personalizar la familia de patos y otras joyas para hacer que mamá se sienta verdaderamente especial.
 </td>
 </tr>
+
 </table>
 
-<!-- ===================== BANNER BOTÓ (fons blanc) ===================== -->
-<table class="banner banner1" cellpadding="0" cellspacing="0">
-  <tr>
-    <td class="btn-container">
-      <table cellspacing="0" cellpadding="0" border="0" style="display:inline-block;">
-        <tr>
-          <td>
-            <a href="#" class="btn-patos">
-              CREA TU FAMILIA DE PATOS PERSONALIZADA
-            </a>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
+<table width="600" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">
+<table cellpadding="0" cellspacing="0">
+<tr>
+<td>
+<a href="https://www.customima.com/collections/patitos">
+CREA TU FAMILIA DE PATOS PERSONALIZADA
+</a>
+</td>
+</tr>
+</table>
+</td>
+</tr>
 </table>
 
-<!-- ===================== BANNER 2 ===================== -->
-<table class="banner banner2" cellpadding="0" cellspacing="0" style="width:100%; max-width:600px; margin:0 auto;">
+<table width="600" cellpadding="0" cellspacing="0">
+
 <tr>
-<td class="banner2-subtitulo" style="padding:10px 15px;">
-COLECCIÓN DE PATOS
-</td></tr>
+<td align="center">
+<h3>COLECCIÓN DE PATOS</h3>
+</td>
+</tr>
+
 <tr>
-<td class="banner2-subtitulo2" style="padding:0px 15px 20px 15px;">
+<td align="center">
 La familia que se lleva cerca del corazón
 </td>
 </tr>
 
-<!-- Bloque blanc intern 75% amb bordes redondejats -->
 <tr>
 <td align="center">
-  <div class="banner-block-white" style="width:65%; max-width:90%; margin:0 auto;">
-    <div style="font-size:16px; font-style:italic; font-weight:600; margin-bottom:12px;">
-      ¿Por qué regalar patitos?
-    </div>
-    <div style="font-size:12px; line-height:1.6; font-style: italic;">
-      Porque simbolizan el vínculo innato de familia y cuidado: pequeños patitos que representan a quienes más queremos.
-    </div>
-  </div>
+
+<table width="400" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">
+
+<div>
+<strong><em>¿Por qué regalar patitos?</em></strong>
+</div>
+
+<div>
+<em>
+Porque simbolizan el vínculo innato de familia y cuidado: pequeños patitos que representan a quienes más queremos.
+</em>
+</div>
+
+</td>
+</tr>
+</table>
+
 </td>
 </tr>
 
-<!-- TARJETAS RESPONSIVE AMB ESPAI I CENTRAT -->
 <tr>
-  <td align="center">
-    <!-- Taula general de targetes -->
-    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="border-collapse: separate; border-spacing: 15px; margin-top:10px;">
+<td align="center">
 
-      <!-- FILA 1 -->
-      <tr>
-        <td class="card-col" style="padding:0; text-align:center;">
-          <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito_mama.jpg?v=1772117115" alt="">
-        </td>
-        <td class="card-col" style="padding:0; text-align:center;">
-          <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patita.jpg?v=1772117115" alt="">
-        </td>
-        <td class="card-col" style="padding:0; text-align:center;">
-          <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patita_bebe.jpg?v=1772117115" alt="">
-        </td>
-      </tr>
+<table width="100%" cellpadding="0" cellspacing="0">
 
-      <!-- FILA 2 -->
-      <tr>
-        <td class="card-col" style="padding:0; text-align:center;">
-          <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito_papa.jpg?v=1772117116" alt="">
-        </td>
-        <td class="card-col" style="padding:0; text-align:center;">
-          <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito.jpg?v=1772117115" alt="">
-        </td>
-        <td class="card-col" style="padding:0; text-align:center;">
-          <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/cascaron.jpg?v=1772117115" alt="">
-        </td>
-      </tr>
-
-      <!-- FILA 3 -->
-      <tr>
-        <td class="card-col" style="padding:0; text-align:center;">
-          <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito_abuela.jpg?v=1772117115" alt="">
-        </td>
-        <td class="card-col" style="padding:0; text-align:center;">
-          <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito_novios.jpg?v=1772117115" alt="">
-        </td>
-        <td class="card-col" style="padding:0; text-align:center;">
-          <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito_perrito.jpg?v=1772117115" alt="">
-        </td>
-      </tr>
-
-    </table>
-  </td>
-</tr>
-
-<!-- ===================== texto ===================== -->
 <tr>
-  <td align="center">
-    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color:#c7b1a1; max-width:450px; margin:0 auto;">
-      <tr>
-        <td style="padding:10px; text-align:center;">
-          <strong>GRABA GRATIS</strong> cada patito con el nombre de la persona que representa, reforzando la conexión emocional y haciendo cada pieza un recuerdo único.
-        </td>
-      </tr>
-    </table>
-  </td>
-</tr>
-
-
-<!-- ===================== ESPACIO BLANCO ===================== -->
-
-  <tr>
-    <td style="height:0px; background-color:#c7b1a1;">&nbsp;</td>
-  </tr>
-
-
-<!-- ===================== BANNER TIPS ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#c7b1a1; padding: 0 0 20px 0;">
-  <tr>
-    <td>
-      <div class="banner-tips">
-        <p class="banner-tips-tit">CONSEJO</p>
-        <p>Destacar la posibilidad de crear la familia completa de patos personalizada aumenta la percepción de valor y convierte el regalo en algo memorable y exclusivo.</p>
-      </div>
-    </td>
-  </tr>
-</table>
-
-
-<!-- ===================== BANNER DOS COLUMNAS RESPONSIVE ===================== -->
-<table class="banner banner-two-columns" cellpadding="0" cellspacing="0" style="width:100%; max-width:600px; margin:0 auto;">
-  <tr>
-    <td>
-      <table class="two-columns-table" cellpadding="0" cellspacing="0" style="width:100%; border-collapse:collapse;">
-        <tr>
-          <!-- Columna izquierda: imagen rellena toda la columna -->
-          <td class="column-left" style="width:50%; vertical-align:top; padding:0;">
-            <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/personalizadas.jpg?v=1772119409" 
-                 alt="Joyas personalizadas para mamá" 
-                 style="width:100%; height:auto; display:block;">
-          </td>
-
-          <!-- Columna derecha: texto -->
-          <td class="column-right" style="width:50%; vertical-align:top; padding:20px 30px 0px 20px;">
-            <h2 style="margin-top:0; margin-bottom:10px; font-size:16px;">Otras joyas personalizadas que emocionan</h2>
-            <ul style="font-size: 14px; margin: 0; padding-left:15px;">
-              <li><strong>Collares grabados:</strong> nombres, fechas o frases cortas como “Siempre en mi corazón”.</li>
-              <li><strong>Pulseras con charms o iniciales:</strong> árbol de la vida, infinito, iniciales de la familia.</li>
-              <li><strong>Anillos grabados por dentro:</strong> “Te amo siempre”, coordenadas de un lugar especial, fechas de nacimiento.</li>
-              <li><strong>Llamadores de ángeles:</strong> inicial o mensaje corto de protección y amor.</li>
-            </ul>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-
-
-
-<!-- Espacio blanco debajo -->
-<table class="banner" cellpadding="0" cellspacing="0">
-  <tr>
-    <td style="height:30px; background-color:#ffffff;">&nbsp;</td>
-  </tr>
-</table>
-
-
-
-<!-- ===================== BANNER 3 ===================== -->
-<table class="banner banner1" cellpadding="0" cellspacing="0">
-<tr>
-<td class="banner1-subtitulo">
-IDEAS DE FRASES Y GRABADOS
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito_mama_d2ff982f-a339-4b91-8c0f-f328c57fdbfe.jpg?v=1773153669">
+</td>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patita_94a1f598-3f0d-450b-8982-d2991b3c7e78.jpg?v=1773153669">
+</td>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patita_bebe_bf9a6584-4bfb-400c-8f59-4dcf68a2c0ec.jpg?v=1773153669">
 </td>
 </tr>
+
+<tr>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito_papa_26a0de27-8fcb-4afe-8636-f9f332e44453.jpg?v=1773153669">
+</td>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito_3671b261-d6a1-422b-879a-d278547e0839.jpg?v=1773153669">
+</td>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/cascaron_018f1607-eb5d-4a8a-824b-524457c22aa1.jpg?v=1773153669">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito_abuela_6b003dcd-7665-4383-a7e3-70ac2b31f8b4.jpg?v=1773153669">
+</td>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito_novios_b047fa41-dabb-48f3-9e46-97da9ac3c4ce.jpg?v=1773153669">
+</td>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/patito_perrito_2a3d2c59-c086-4a5c-b60c-63305fb9c4ed.jpg?v=1773153669">
+</td>
+</tr>
+
+</table>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<strong>GRABA GRATIS</strong> cada patito con el nombre de la persona que representa, reforzando la conexión emocional y haciendo cada pieza un recuerdo único.
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+<table width="80%" cellpadding="0" cellspacing="0">
+<tr>
+<td align="center">
+
+<p><strong>CONSEJO</strong></p>
+
+<p>
+Destacar la posibilidad de crear la familia completa de patos personalizada aumenta la percepción de valor y convierte el regalo en algo memorable y exclusivo.
+</p>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+
 <tr>
 <td>
-  <img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/Sin-titulo-2_114889ec-3409-4201-9d82-e5d671eaecce.png?v=1771341312" width="600" style="display:block; margin:0 auto;" alt="Ejemplos de grabados">
+
+<table width="100%" cellpadding="0" cellspacing="0">
+
+<tr>
+
+<td width="50%">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/personalizadas.jpg?v=1772119409" alt="Joyas personalizadas para mamá" width="100%">
 </td>
+
+<td width="50%">
+
+<h2>Otras joyas personalizadas que emocionan</h2>
+
+<ul>
+<li><strong>Collares grabados:</strong> nombres, fechas o frases cortas como “Siempre en mi corazón”.</li>
+<li><strong>Pulseras con charms o iniciales:</strong> árbol de la vida, infinito, iniciales de la familia.</li>
+<li><strong>Anillos grabados por dentro:</strong> “Te amo siempre”, coordenadas de un lugar especial, fechas de nacimiento.</li>
+<li><strong>Llamadores de ángeles:</strong> inicial o mensaje corto de protección y amor.</li>
+</ul>
+
+</td>
+
 </tr>
-</table>
-<!-- ===================== BANNER TIPS ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
-  <tr>
-    <td>
-      <div class="banner-tips">
-        <p class="banner-tips-tit">CONSEJO</p>
-        <p>Frases cortas son más legibles y elegantes en joyas pequeñas y generan un impacto emocional inmediato.</p>
-      </div>
-    </td>
-  </tr>
+
 </table>
 
-<!-- ===================== ESPACIO BLANCO ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0">
-  <tr>
-    <td style="height:10px; background-color:#ffffff;">&nbsp;</td>
-  </tr>
-</table>
-
-<!-- ===================== AVISO IMPORTANTE + TABLA ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
-  <table class="banner banner1" cellpadding="0" cellspacing="0">
-<tr>
-<td class="banner1-subtitulo">
-Calendario de inspiración online
 </td>
 </tr>
+
 <tr>
-<td class="banner1-subtitulo2" style="text-transform:none">
+<td align="center">
+<h3>IDEAS DE FRASES Y GRABADOS</h3>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/Sin-titulo-2_114889ec-3409-4201-9d82-e5d671eaecce.png?v=1771341312" width="600" alt="Ejemplos de grabados">
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+<p><strong>CONSEJO</strong></p>
+
+<p>
+Frases cortas son más legibles y elegantes en joyas pequeñas y generan un impacto emocional inmediato.
+</p>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+<h3>Calendario de inspiración online</h3>
+
+</td>
+</tr>
+
+<tr>
+<td align="center">
 Cuándo pedir y qué joya
 </td>
 </tr>
 
+<tr>
+<td align="center">
 
-<!-- Mensaje importante -->
-  <tr>
-    <td class="important-note">
-  ⚠️ <strong>Importante:</strong> Entregamos en 48 h, pero nuestros patitos más adorados vuelan rápido 🦆✨
+⚠️ <strong>Importante:</strong> Entregamos en 48 h, pero nuestros patitos más adorados vuelan rápido 🦆✨
 ¡No te quedes sin el tuyo! Planifica tu compra y asegúrate de que tu regalo llegue a tiempo.
+
 </td>
+</tr>
 
-  </tr>
-<!-- ===================== ESPACIO BLANCO ===================== -->
+<tr>
+<td>
 
-  <tr>
-    <td style="height:0px; background-color:#ffffff;">&nbsp;</td>
-  </tr>
+<table width="100%" cellpadding="0" cellspacing="0">
 
-  <!-- Tabla -->
-  <tr>
-    <td style="padding:0 20px 20px 20px;">
-      <table class="gift-table" cellpadding="0" cellspacing="0">
-        <thead>
-          <tr>
-            <th>Fecha para comprar</th>
-            <th>Joyas sugeridas</th>
-            <th>Idea de grabado</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>7–5 días antes del Día de la Madre</td>
-            <td style="background-color:#f4f4f4;">Colección de Patos personalizada</td>
-            <td>Nombres de cada miembro de la familia</td>
-          </tr>
-          <tr>
-            <td>5–3 días antes</td>
-            <td style="background-color:#f4f4f4;">Pulsera de charms o árbol de la vida</td>
-            <td>Nombres o fechas especiales</td>
-          </tr>
-          <tr>
-            <td>5–3 días antes</td>
-            <td style="background-color:#f4f4f4;">Anillo grabado</td>
-            <td>“Siempre en mi corazón”</td>
-          </tr>
-          <tr>
-            <td>5–3 días antes</td>
-            <td style="background-color:#f4f4f4;">Llamador de ángeles</td>
-            <td>Inicial de los hijos o mensaje de protección</td>
-          </tr>
-        </tbody>
-      </table>
-    </td>
-  </tr>
+<tr>
+<th>Fecha para comprar</th>
+<th>Joyas sugeridas</th>
+<th>Idea de grabado</th>
+</tr>
+
+<tr>
+<td>7–5 días antes del Día de la Madre</td>
+<td>Colección de Patos personalizada</td>
+<td>Nombres de cada miembro de la familia</td>
+</tr>
+
+<tr>
+<td>5–3 días antes</td>
+<td>Pulsera de charms o árbol de la vida</td>
+<td>Nombres o fechas especiales</td>
+</tr>
+
+<tr>
+<td>5–3 días antes</td>
+<td>Anillo grabado</td>
+<td>“Siempre en mi corazón”</td>
+</tr>
+
+<tr>
+<td>5–3 días antes</td>
+<td>Llamador de ángeles</td>
+<td>Inicial de los hijos o mensaje de protección</td>
+</tr>
+
 </table>
 
-<!-- ===================== BANNER TIPS ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
-  <tr>
-    <td>
-      <div class="banner-tips">
-        <p class="banner-tips-tit">CONSEJO DE PLANIFICACIÓN</p>
-        <p>Pedir con al menos 3–7 días de antelación asegura personalización y entrega rápida.</p>
-      </div>
-    </td>
-  </tr>
+</td>
+</tr>
+
+<tr>
+<td align="center">
+
+<p><strong>CONSEJO DE PLANIFICACIÓN</strong></p>
+
+<p>
+Pedir con al menos 3–7 días de antelación asegura personalización y entrega rápida.
+</p>
+
+</td>
+</tr>
+
 </table>
 
-<!-- ===================== ESPACIO BLANCO ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0">
-  <tr>
-    <td style="height:30px; background-color:#ffffff;">&nbsp;</td>
-  </tr>
+</td>
+</tr>
 </table>
-
-
-<!-- ===================== FOOTER SIMPLE ===================== -->
- 
-<table class="foot1" cellpadding="0" cellspacing="0">
-  <tr>
-    <td>
-      &copy; 2026 CUSTOMIMA
-    </td>
-  </tr>
-</table>
-
 
 </body>
 </html>

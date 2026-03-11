@@ -2,851 +2,340 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Guía práctica - significado de las joyas más regaladas</title>
-
-<!-- Google Fonts Poppins -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-  body{
-    margin:0;
-    padding:0;
-    font-family:'Poppins', Arial, sans-serif;
-    background-color:#f0f0f0; /* fons gris global */
-  }
-
-  /* ===================== Banner general ===================== */
-  .banner{
-    width:600px;
-    margin:0 auto; 
-  }
-
-  /* Banner 1 */
-  .banner1{
-    background-color:#ffffff; 
-    color:#5c5c5c;
-    text-align:center;
-  }
-  .banner1-titulo{
-    font-size:30px;
-    color:#c7b1a1;
-    font-weight:300;
-    letter-spacing:1.2px;
-    text-transform:uppercase;
-    padding:20px 20px 10px 20px;
-  }
-  .banner1-subtitulo{
-    font-size:22px;
-    text-transform:uppercase;
-    letter-spacing:1.2px;
-    padding:0px 25px 0px 25px;
-    color:#5c5c5c;
-  }
-  .banner1-subtitulo2{
-    font-size:18px;
-    text-transform:uppercase;
-    letter-spacing:1.2px;
-    padding:0px 25px 20px 25px;
-    color:#5c5c5c;
-  }
-  
-  .banner1-texto{
-    font-size:16px;
-    line-height:1.6;
-    padding:0 30px;
-  }
-
-  /* Banner 2 */
-  .banner2{
-    background-color:#c7b1a1;
-    color:white;
-    text-align:center;
-    padding:20px 0px 0px 0px;
-  }
-  .banner2-subtitulo{
-    font-size:22px;
-    text-transform:uppercase;
-    letter-spacing:1.2px;
-    padding:0px 25px 0px 25px;
-  }
-    .banner2-subtitulo2{
-    font-size:18px;
-    letter-spacing:1.2px;
-    padding:0px 25px 20px 25px;
-  }
-  .banner2-lista{
-    font-size:16px;
-    line-height:1.6;
-    padding:0 60px 0px 60px;
-    text-align:left;
-  }
-  .banner2-final{
-    font-size:16px;
-    padding:0px 35px;
-    font-weight: 600;
-  }
-
-  /* Bloque blanco interno del banner2 */
-  .banner-block-white{
-    width:65%;
-    margin:0 auto;
-    background-color:#ffffff;
-    color:#c7b1a1;
-    padding: 20px 20px 10px 20px;
-    text-align:center;
-    border-radius:12px;
-    line-height: 1.2px;
-  }
-
-  /* Estil botó personalitzat */
-  .btn-patos {
-    background-color: #bc6a4f;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Poppins', Arial, sans-serif;
-    display: block;
-    padding: 12px 25px;
-    border-radius: 6px;
-    text-align: center;
-  }
-
-  /* Contenidor del botó per centrar-lo i que no ocupi tot l'ample */
-  .btn-container {
-    text-align: center;
-    padding: 20px 0;
-  }
-
-  /* ===================== Footer simple ===================== */
-  .foot1{
-    background-color:#000000;
-    color:white;
-    text-align:center;
-    width:600px;
-    margin:0 auto;
-    padding:10px 0;
-    font-size:14px;
-    font-family:'Poppins', Arial, sans-serif;
-  }
-  /* ===================== Banner general ===================== */
- 
-/* ===================== Aviso importante ===================== */
-.important-note {
-  background-color: #fff2cc;
-  color: #635951;
-  font-weight: 600;
-  font-size: 16px;
-  text-align: center;
-  border: 5px solid #c7b1a1;
-  margin: 0px auto;          
-  padding: 15px 20px;         
-  width: 560px;               
-  display: block;
-  font-family: 'Poppins', Arial, sans-serif;
-  box-sizing: border-box;     
-}
-
-/* ===================== Tabla de fechas y regalos ===================== */
-.gift-table {
-  margin: 0 auto;             
-  width: 90%;               
-  border-collapse: collapse;
-  border: 1px solid #c7b1a1;
-  font-size: 14px;
-  text-align: left;
-  box-sizing: border-box;     
-}
-.gift-table-no-border {
-  margin: 0 auto;             
-  width: 90%;               
-  border-collapse: collapse;
-  border: none;
-  font-size: 14px;
-  text-align: left;
-  box-sizing: border-box;     
-}
-
-.gift-table th {
-  background-color: #c7b1a1;
-  color: #ffffff;
-  padding: 8px;
-}
-
-.gift-table td {
-  padding: 8px;
-  border-top: 1px solid #c7b1a1;
-}
-
-
- /* Título TIP más compacto */
-.banner-tips-tit {
-  font-size: 20px;       
-  font-weight: 700;
-  text-align: center;
-  margin: 0;              
-  padding: 20px 0 0 0;            
-  line-height: 1.1;       
-}
-
-/* Contenedor TIP */
-.banner-tips {
-  background-color: #a1c4c7;
-  color: white;
-  text-align: center;
-  width: 80%;
-  margin: 0 auto;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 0px 20px 12px 20px; 
-  font-family: 'Poppins', Arial, sans-serif;
-  border-radius: 5px;
-  line-height: 1.4;       
-}
-
-/* Espacio blanco encima del TIP */
-.banner-tips-space {
-  height: 20px;       
-  background-color: #ffffff; 
-}
-
-/* Banner de dos columnas completo */
-.banner-two-columns {
-  width: 600px;
-  margin: 0 auto;
-  background-color: #ede5de; 
-  font-family: 'Poppins', Arial, sans-serif;
-}
-
-.two-columns-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-.two-columns-table td {
-  vertical-align: top;
-  padding: 0;
-}
-
-/* Columna izquierda: imagen rellena toda la columna */
-.column-left {
-  width: 50%;
-}
-.column-left img {
-  display: block;
-  width: 100%;
-  height: 100%; 
-  object-fit: cover; 
-}
-
-.column-right {
-  width: 50%;
-  padding: 20px;
-  color: #000000;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-/* ===================== Banner Check ===================== */
-.banner-check {
-  width: 600px;
-  margin: 0 auto;
-  border-collapse: collapse;
-  background-color: #ffffff;
-  font-family: 'Poppins', Arial, sans-serif;
-  overflow: hidden;
-}
-
-.banner-check-title {
-  padding: 60px 20px;
-  text-align: center;
-  line-height: 2.4rem;
-  font-size: 24px;
-  font-weight: 700;
-  color: #5c5c5c;
-}
-
-.banner-check-title .check-symbol {
-  font-size: 48px; /* Doble de la mida del text */
-  color: #c7b1a1;
-  vertical-align: middle;
-  margin-right: 8px;
-}
-
-.banner-check-image-container {
-  text-align: center;
-}
-
-.banner-check-image {
-  width: 100%;
-  object-fit: cover;
-}
-
-.banner-check-text {
-  padding: 15px 20px 20px 20px;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #bc6a4f;
-  text-align: center;
-}
-
-.banner-check-text p {
-  margin: 10px 0;
-}
-
-.banner-check-text strong {
-  text-transform: uppercase;
-}
-.txt-i{
-  font-size: 1rem;
-  color: #bc6a4f;
-  font-weight: 600;
-  font-style: italic;
-}
-.txt-b{
-  font-size: 1rem;
-  font-weight: bold;
-}
-.txt{
-  font-size: 1rem;
-  color: #5c5c5c;
-}
-.tit-txt{
-  font-size: 1.8rem;
-  color: #635951;
-}
-
-li{
-  font-size: 1rem;
-  line-height: 1.4em;
-  margin-bottom: 0.6em;
-}
-.container {
-  padding: 10px 50px 30px 50px}
-
-.banner{
-  width:600px;
-  margin:0 auto;}
-
-.container-600 {
-  width:600px;
-  margin:0 auto;
-  background:#ffffff;
-}
-
-.calendar-table {
-  width:560px;
-  margin:20px auto;
-  border-collapse:collapse;
-  text-align:center;
-  font-family:'Poppins', Arial, sans-serif;
-  font-size:14px;
-  border:1px solid #c7b1a1;
-}
-
-.calendar-cell {
-  width:33.33%;
-  border:1px solid #c7b1a1;
-  padding:0;
-  vertical-align:top;
-}
-
-.month-title {
-  background:#c7b1a1;
-  color:#ffffff;
-  font-weight:bold;
-  text-transform:uppercase;
-  padding:6px 0;
-}
-
-.cell-heading {
-  font-weight:bold;
-  padding:6px 5px 0 5px;
-}
-
-.cell-text {
-  padding:4px 5px 8px 5px;
-}
-
-
-
-/* ===================== RESPONSIVE MÒBIL ===================== */
-@media screen and (max-width: 620px){
-
-  .banner,
-  .foot1,
-  .banner-two-columns,
-  .banner-check,
-  .container-600,
-  table[width="600"]{
-    width:100% !important;
-    max-width:100% !important;
-  }
-
-  .important-note{
-    width:90% !important;
-  }
-
-  .calendar-table{
-    width:95% !important;
-  }
-
-  .container{
-    padding:15px 20px 25px 20px !important;
-  }
-
-  .banner1-titulo{
-    font-size:22px !important;
-  }
-
-  .banner1-subtitulo{
-    font-size:18px !important;
-  }
-
-  .banner1-subtitulo2{
-    font-size:16px !important;
-  }
-
-  .banner-check-title{
-    font-size:20px !important;
-    padding:35px 15px !important;
-    line-height:1.6rem !important;
-  }
-
-  .tit-txt{
-    font-size:1.4rem !important;
-  }
-
-  .txt,
-  .txt-b,
-  .txt-i,
-  li{
-    font-size:0.95rem !important;
-  }
-
-  .banner2-lista{
-    padding:0 25px !important;
-  }
-
-  .column-left,
-  .column-right{
-    width:100% !important;
-    display:block !important;
-  }
-
-  .column-right{
-    padding:20px !important;
-  }
-
-  .calendar-cell{
-    display:block !important;
-    width:100% !important;
-  }
-
-  .calendar-cell + .calendar-cell{
-    border-top:none !important;
-  }
-
-}
-
-</style>
 </head>
 
 <body>
 
-<!-- Banner 1: Introducción -->
-<table class="banner banner1" width="600" align="center" cellpadding="0" cellspacing="0">
-  <tr><td class="banner1-titulo">Guía práctica</td></tr>
-  <tr><td class="banner1-subtitulo">El significado de las joyas más regaladas</td></tr>
-  <tr><td class="banner1-subtitulo2">y cuándo elegir cada una</td></tr>
-  <tr><td class="banner1-texto">
-    En Customima entendemos que una joya no es solo un detalle bonito: es un mensaje que se lleva puesto cada día. Elegir bien la pieza y el momento multiplica su valor emocional. Esta guía te ayudará no solo a entender el simbolismo de las joyas más regaladas, sino también cuándo tiene más sentido regalar cada una para sorprender de verdad.
-  </td></tr>
+<table width="600" align="center" cellpadding="0" cellspacing="0">
+<tr><td align="center">Guía práctica</td></tr>
+<tr><td align="center">El significado de las joyas más regaladas</td></tr>
+<tr><td align="center">y cuándo elegir cada una</td></tr>
+<tr>
+<td align="center">
+En Customima entendemos que una joya no es solo un detalle bonito: es un mensaje que se lleva puesto cada día. Elegir bien la pieza y el momento multiplica su valor emocional. Esta guía te ayudará no solo a entender el simbolismo de las joyas más regaladas, sino también cuándo tiene más sentido regalar cada una para sorprender de verdad.
+</td>
+</tr>
 </table>
 
+<br>
 
+<table width="600" align="center" cellpadding="0" cellspacing="0">
+<tr><td align="center">✨ Collares simbólicos</td></tr>
 
-
-
-
-
-<!-- ===================== BANNER ===================== -->
-<table class="banner-check">
-  <tr>
-    <td class="banner-check-title"><span class="check-symbol">✨</span>Collares simbólicos</td></tr>
 <tr>
-    <td class="banner-check-image-container">
-      <img class="banner-check-image" src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/corazon_para_dos.jpg?v=1772548055" alt="Collar corazón para dos">
-    </td>
-  </tr>
-  <tr><td class="tit-txt container">Regalos que hablan desde el corazón</td></tr>
-  <tr><td class="txt container">El collar es la joya emocional por excelencia porque se sitúa cerca del corazón. Es ideal cuando quieres que tu mensaje sea claro y duradero.</td></tr>
-  <tr><td class="txt container"><span class="txt-b">Símbolos y mensajes más elegidos:</span>
-    <ul class="banner2-lista">
-      <li><span style="position:relative; top:2px;font-size: 1.5em;">♥ </span><strong>Corazón</strong> Amor, cariño, reconciliación</li>
-      <li><span style="position:relative; top:7px;font-size: 2em;">∞ </span><strong>Infinito</strong> Relación duradera o amistad irrompible</li>
-      <li><span style="position:relative; top:2px;font-size: 1.5em;">☾ </span><strong>Luna</strong> Nueva etapa, cambio personal</li>
-      <li><span style="position:relative; top:2px;font-size: 1.5em;">★ </span><strong>Estrella</strong> Apoyo, inspiración, “estoy contigo”</li>
-    </ul>
-    
-<span class="txt-i" style="vertical-align: center !important;">Perfecto para: aniversarios, cumpleaños de pareja, San Valentín, regalos de agradecimiento profundo.</span>
-  </td>
-      </tbody>
-      </table>
-  
-<!-- ===================== BANNER TIPS ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
-  <tr>
-    <td>
-      <div class="banner-tips">
-        <p class="banner-tips-tit">CONSEJO ÚTIL</p>
-        <p>Si no conoces bien su estilo, elige colgantes pequeños y universales: se usan más y combinan con todo.</p>
-      </div>
-    </td>
-  </tr>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/corazon_para_dos.jpg?v=1772548055" alt="Collar corazón para dos" width="600">
+</td>
+</tr>
+
+<tr><td align="center">Regalos que hablan desde el corazón</td></tr>
+
+<tr>
+<td>
+El collar es la joya emocional por excelencia porque se sitúa cerca del corazón. Es ideal cuando quieres que tu mensaje sea claro y duradero.
+</td>
+</tr>
+
+<tr>
+<td>
+
+<b>Símbolos y mensajes más elegidos:</b>
+
+<ul>
+<li>♥ <strong>Corazón</strong> Amor, cariño, reconciliación</li>
+<li>∞ <strong>Infinito</strong> Relación duradera o amistad irrompible</li>
+<li>☾ <strong>Luna</strong> Nueva etapa, cambio personal</li>
+<li>★ <strong>Estrella</strong> Apoyo, inspiración, “estoy contigo”</li>
+</ul>
+
+<i>Perfecto para: aniversarios, cumpleaños de pareja, San Valentín, regalos de agradecimiento profundo.</i>
+
+</td>
+</tr>
 </table>
 
+<br>
 
-
-
-
-
-
-
-<!-- ===================== BANNER ===================== -->
-<table class="banner-check">
-  <tr>
-    <td class="banner-check-title"><span class="check-symbol">🧿</span>Pulsera de los 7 nudos </td></tr>
+<table width="600" align="center">
 <tr>
-    <td class="banner-check-image-container">
-      <img class="banner-check-image" src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/pulsera-de-7-nudos.jpg?v=1772548879" alt="Pulsera de los 7 nudos">
-    </td>
-  </tr>
-  <tr><td class="tit-txt container">El amuleto regalo por excelencia</td></tr>
-  <tr><td class="txt container">Es una de las joyas con mayor carga simbólica. No se regala solo por estética, sino por intención. Tradicionalmente se coloca pensando en la protección de quien la recibe.</td></tr>
-  <tr><td class="txt container"><span class="txt-b">Qué comunica cuando la regalas:</span>
-    <ul class="banner2-lista">
-      <li>“Quiero que estés protegido/a”</li>
-      <li>Apoyo en momentos difíciles</li>
-      <li>Deseo de buena suerte</li>
-    </ul>
-<span class="txt-i">Momentos ideales: exámenes, nuevo trabajo, mudanza, viajes, recuperaciones, comienzos de año.</span>
-  </td>
-      </tbody>
-      </table>
-  
-<!-- ===================== BANNER TIPS ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
-  <tr>
-    <td>
-      <div class="banner-tips">
-        <p class="banner-tips-tit">CONSEJO ÚTIL</p>
-        <p>Funciona muy bien como regalo pequeño con gran significado — ideal para detalles de grupo o autorregalo consciente.</p>
-      </div>
-    </td>
-  </tr>
+<td align="center">
+<b>CONSEJO ÚTIL</b><br>
+Si no conoces bien su estilo, elige colgantes pequeños y universales: se usan más y combinan con todo.
+</td>
+</tr>
 </table>
 
+<br>
 
+<table width="600" align="center">
 
+<tr><td align="center">🧿 Pulsera de los 7 nudos</td></tr>
 
-
-
-
-<!-- ===================== BANNER ===================== -->
-<table class="banner-check">
-  <tr>
-    <td class="banner-check-title"><span class="check-symbol">🌳</span>Árbol de la vida </td></tr>
 <tr>
-    <td class="banner-check-image-container">
-      <img class="banner-check-image" src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/joya_arbol_de_la_vida.jpg?v=1772548055" alt="Joya arbol de la vida">
-    </td>
-  </tr>
-  <tr><td class="tit-txt container">La joya familiar</td></tr>
-  <tr><td class="txt container">Representa raíces, crecimiento y conexión entre generaciones. Es una de las piezas más versátiles para regalar con mensaje emocional sin ser romántico.</td></tr>
-  <tr><td class="txt container"><span class="txt-b">Transmite</span>
-    <ul class="banner2-lista">
-      <li>Unión familiar</li>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/pulsera-de-7-nudos.jpg?v=1772548879" alt="Pulsera de los 7 nudos" width="600">
+</td>
+</tr>
+
+<tr><td align="center">El amuleto regalo por excelencia</td></tr>
+
+<tr>
+<td>
+Es una de las joyas con mayor carga simbólica. No se regala solo por estética, sino por intención. Tradicionalmente se coloca pensando en la protección de quien la recibe.
+</td>
+</tr>
+
+<tr>
+<td>
+
+<b>Qué comunica cuando la regalas:</b>
+
+<ul>
+<li>“Quiero que estés protegido/a”</li>
+<li>Apoyo en momentos difíciles</li>
+<li>Deseo de buena suerte</li>
+</ul>
+
+<i>Momentos ideales: exámenes, nuevo trabajo, mudanza, viajes, recuperaciones, comienzos de año.</i>
+
+</td>
+</tr>
+</table>
+
+<br>
+
+<table width="600" align="center">
+<tr>
+<td align="center">
+<b>CONSEJO ÚTIL</b><br>
+Funciona muy bien como regalo pequeño con gran significado — ideal para detalles de grupo o autorregalo consciente.
+</td>
+</tr>
+</table>
+
+<br>
+
+<table width="600" align="center">
+
+<tr><td align="center">🌳 Árbol de la vida</td></tr>
+
+<tr>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/joya_arbol_de_la_vida.jpg?v=1772548055" alt="Joya arbol de la vida" width="600">
+</td>
+</tr>
+
+<tr><td align="center">La joya familiar</td></tr>
+
+<tr>
+<td>
+Representa raíces, crecimiento y conexión entre generaciones. Es una de las piezas más versátiles para regalar con mensaje emocional sin ser romántico.
+</td>
+</tr>
+
+<tr>
+<td>
+
+<b>Transmite</b>
+
+<ul>
+<li>Unión familiar</li>
 <li>Fortaleza y estabilidad</li>
 <li>Evolución personal</li>
-    </ul>
-<span class="txt-i">Momentos ideales: Día de la Madre, abuelas, nacimientos, aniversarios familiares, logros personales.</span>
-  </td>
-          </tbody>
-      </table>
-  
-<!-- ===================== BANNER TIPS ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
-  <tr>
-    <td>
-      <div class="banner-tips">
-        <p class="banner-tips-tit">CONSEJO ÚTIL</p>
-        <p>Si lleva circonitas o piedras, añade el significado del color al mensaje del regalo.</p>
-      </div>
-    </td>
-  </tr>
+</ul>
+
+<i>Momentos ideales: Día de la Madre, abuelas, nacimientos, aniversarios familiares, logros personales.</i>
+
+</td>
+</tr>
 </table>
 
+<br>
 
-
-
-
-
-
-<!-- ===================== BANNER ===================== -->
-<table class="banner-check">
-  <tr>
-    <td class="banner-check-title"><span class="check-symbol">👼</span>Llamador de ángeles </td></tr>
+<table width="600" align="center">
 <tr>
-    <td class="banner-check-image-container">
-      <img class="banner-check-image" src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/llamador_de_angel.jpg?v=1772548658" alt="Llamador de ángeles">
-    </td>
-  </tr>
-  <tr><td class="tit-txt container">Regalo de cuidado y calma</td></tr>
-  <tr><td class="txt container">Pieza tradicional asociada a protección y serenidad. Su suave sonido se vincula simbólicamente con la calma y el acompañamiento.</td></tr>
-  <tr><td class="txt container"><span class="txt-b">Muy elegido para:</span>
-    <ul class="banner2-lista">
-      <li>Embarazo</li>
+<td align="center">
+<b>CONSEJO ÚTIL</b><br>
+Si lleva circonitas o piedras, añade el significado del color al mensaje del regalo.
+</td>
+</tr>
+</table>
+
+<br>
+
+<table width="600" align="center">
+
+<tr><td align="center">👼 Llamador de ángeles</td></tr>
+
+<tr>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/llamador_de_angel.jpg?v=1772548658" alt="Llamador de ángeles" width="600">
+</td>
+</tr>
+
+<tr><td align="center">Regalo de cuidado y calma</td></tr>
+
+<tr>
+<td>
+Pieza tradicional asociada a protección y serenidad. Su suave sonido se vincula simbólicamente con la calma y el acompañamiento.
+</td>
+</tr>
+
+<tr>
+<td>
+
+<b>Muy elegido para:</b>
+
+<ul>
+<li>Embarazo</li>
 <li>Futuras madres</li>
 <li>Personas en etapas de ansiedad o cambio</li>
-    </ul>
-<span class="txt-i">Qué expresa: cuidado, presencia, protección y apoyo emocional.</span>
-  </td>
-  </td></tr>
-          </tbody>
-      </table>
-  
-<!-- ===================== BANNER TIPS ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
-  <tr>
-    <td>
-      <div class="banner-tips">
-        <p class="banner-tips-tit">CONSEJO ÚTIL</p>
-        <p>Acompáñalo de una nota explicando su significado — aumenta mucho el valor percibido.</p>
-      </div>
-    </td>
-  </tr>
+</ul>
+
+<i>Qué expresa: cuidado, presencia, protección y apoyo emocional.</i>
+
+</td>
+</tr>
 </table>
 
+<br>
 
-
-
-
-
-
-<!-- ===================== BANNER ===================== -->
-<table class="banner-check">
-  <tr>
-    <td class="banner-check-title"><span class="check-symbol">💍</span>Anillos</td></tr>
+<table width="600" align="center">
 <tr>
-    <td class="banner-check-image-container">
-      <img class="banner-check-image" src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/anillo_con_inicial.jpg?v=1772548055" alt="Anillo con inicial">
-    </td>
-  </tr>
-  <tr><td>
-  <tr><td class="tit-txt container">Regalos con intención clara</td></tr>
-  <tr><td class="txt container">El anillo simboliza continuidad y compromiso. No siempre es romántico: también puede representar metas, promesas personales o vínculos especiales.</td></tr>
-  <tr><td class="txt container"><span class="txt-b">Diseños con más mensaje:</span>
-    <ul class="banner2-lista">
-      <li>💍 Solitario — Compromiso</li>
+<td align="center">
+<b>CONSEJO ÚTIL</b><br>
+Acompáñalo de una nota explicando su significado — aumenta mucho el valor percibido.
+</td>
+</tr>
+</table>
+
+<br>
+
+<table width="600" align="center">
+<tr><td align="center">💍 Anillos</td></tr>
+
+<tr>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/anillo_con_inicial.jpg?v=1772548055" alt="Anillo con inicial" width="600">
+</td>
+</tr>
+
+<tr><td align="center">Regalos con intención clara</td></tr>
+
+<tr>
+<td>
+El anillo simboliza continuidad y compromiso. No siempre es romántico: también puede representar metas, promesas personales o vínculos especiales.
+</td>
+</tr>
+
+<tr>
+<td>
+
+<b>Diseños con más mensaje:</b>
+
+<ul>
+<li>💍 Solitario — Compromiso</li>
 <li>♾️ Infinito — Promesa duradera</li>
 <li>🔤 Inicial — Vínculo personal</li>
-    </ul>
-<span class="txt-i">Momentos ideales: compromisos, aniversarios, objetivos cumplidos, regalos de autoafirmación.</span>
-  </td>
-  </td></tr>
-          </tbody>
-      </table>
-  
-<!-- ===================== BANNER TIPS ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
-  <tr>
-    <td>
-      <div class="banner-tips">
-        <p class="banner-tips-tit">CONSEJO ÚTIL</p>
-        <p>Si dudas de la talla, opta por diseños ajustables.</p>
-      </div>
-    </td>
-  </tr>
+</ul>
+
+<i>Momentos ideales: compromisos, aniversarios, objetivos cumplidos, regalos de autoafirmación.</i>
+
+</td>
+</tr>
 </table>
 
+<br>
 
-
-
-
-
-
-<!-- ===================== BANNER ===================== -->
-<table class="banner-check">
-  <tr>
-    <td class="banner-check-title"><span class="check-symbol">💒</span>Arras</td></tr>
+<table width="600" align="center">
 <tr>
-    <td class="banner-check-image-container">
-      <img class="banner-check-image" src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/Arras.jpg?v=1772548879" alt="Arras de boda">
-    </td>
-  </tr>
-  <tr><td>
-  <tr><td class="tit-txt container">Símbolo de unión y prosperidad</td></tr>
-  <tr><td class="txt container">Tradicionales en ceremonias de boda, hoy también se conservan como joya recuerdo. Representan proyecto de vida compartido y estabilidad.</td></tr>
-  <tr><td class="txt container">4000<span class="txt-b"></span>
-    
-<span class="txt-i">Se regalan en: bodas, renovaciones de votos, aniversarios de matrimonio.</span>
-  </td>
-  </td></tr>
-          </tbody>
-      </table>
-  
-<!-- ===================== BANNER TIPS ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
-  <tr>
-    <td>
-      <div class="banner-tips">
-        <p class="banner-tips-tit">CONSEJO ÚTIL</p>
-        <p>Muchas parejas las guardan luego como colgante o pieza conmemorativa.</p>
-      </div>
-    </td>
-  </tr>
+<td align="center">
+<b>CONSEJO ÚTIL</b><br>
+Si dudas de la talla, opta por diseños ajustables.
+</td>
+</tr>
 </table>
 
+<br>
 
+<table width="600" align="center">
+<tr><td align="center">💒 Arras</td></tr>
 
+<tr>
+<td align="center">
+<img src="https://cdn.shopify.com/s/files/1/0590/8044/2013/files/Arras.jpg?v=1772548879" alt="Arras de boda" width="600">
+</td>
+</tr>
 
+<tr><td align="center">Símbolo de unión y prosperidad</td></tr>
 
+<tr>
+<td>
+Tradicionales en ceremonias de boda, hoy también se conservan como joya recuerdo. Representan proyecto de vida compartido y estabilidad.
+</td>
+</tr>
 
+<tr>
+<td>
+4000
 
-
-
-
-
-
-
-
-<!-- ===================== CALENDARIO ===================== -->
-<table class="container-600" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td align="center">
-
-      <table class="calendar-table" cellpadding="0" cellspacing="0">
-
-        <tr>
-          <td class="calendar-cell">
-            <div class="month-title">ENERO</div>
-            <div class="cell-heading">Nuevos comienzos</div>
-            <div class="cell-text">Pulsera 7 nudos</div>
-          </td>
-
-          <td class="calendar-cell">
-            <div class="month-title">FEBRERO</div>
-            <div class="cell-heading">San Valentín</div>
-            <div class="cell-text">Collar corazón o infinito <br>Patito cupido</div>
-          </td>
-
-          <td class="calendar-cell">
-            <div class="month-title">MARZO</div>
-            <div class="cell-heading">Día del Padre</div>
-            <div class="cell-text">Pulsera cuero personalizable<br>Llavero personalizado</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="calendar-cell">
-            <div class="month-title">ABRIL</div>
-            <div class="cell-heading">Comuniones</div>
-            <div class="cell-text">Collar símbolo o inicial</div>
-          </td>
-
-          <td class="calendar-cell">
-            <div class="month-title">MAYO</div>
-            <div class="cell-heading">Día de la Madre</div>
-            <div class="cell-text">Árbol de la vida o llamador de ángel<br>Patitos</div>
-          </td>
-
-          <td class="calendar-cell">
-            <div class="month-title">JUNIO</div>
-            <div class="cell-heading">Graduaciones</div>
-            <div class="cell-text">Pulsera simbólica o anillo<br>Patito Graduado</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="calendar-cell">
-            <div class="month-title">JULIO</div>
-            <div class="cell-heading">Viajes</div>
-            <div class="cell-text">Pulsera 7 nudos</div>
-          </td>
-
-          <td class="calendar-cell">
-            <div class="month-title">AGOSTO</div>
-            <div class="cell-heading">Nuevas etapas</div>
-            <div class="cell-text">Collar luna o estrella</div>
-          </td>
-
-          <td class="calendar-cell">
-            <div class="month-title">SEPTIEMBRE</div>
-            <div class="cell-heading">Aniversarios</div>
-            <div class="cell-text">Anillo o collar infinito</div>
-          </td>
-        </tr>
-
-        <tr>
-          <td class="calendar-cell">
-            <div class="month-title">OCTUBRE</div>
-            <div class="cell-heading">Aniversarios</div>
-            <div class="cell-text">Anillo o collar infinito</div>
-          </td>
-
-          <td class="calendar-cell">
-            <div class="month-title">NOVIEMBRE</div>
-            <div class="cell-heading">Embarazos anunciados</div>
-            <div class="cell-text">Llamador de ángeles</div>
-          </td>
-
-          <td class="calendar-cell">
-            <div class="month-title">DICIEMBRE</div>
-            <div class="cell-heading">Navidad</div>
-            <div class="cell-text">Joyas simbólicas universales<br>Patitos</div>
-          </td>
-        </tr>
-
-      </table>
-    </td>
-  </tr>
-</table>
-<!-- ===================== ESPACIO BLANCO ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0">
-  <tr>
-    <td style="height:30px; background-color:#ffffff;">&nbsp;</td>
-  </tr>
+<i>Se regalan en: bodas, renovaciones de votos, aniversarios de matrimonio.</i>
+</td>
+</tr>
 </table>
 
-<!-- Regla final con márgenes blancos y important-note central -->
-<table width="600" align="center" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
-  <tr>
-    <td>
-      <table width="560" align="center" cellpadding="0" cellspacing="0" class="important-note">
-        <tr>
-          <td>
-              <span><b>🌟 Regla final para acertar siempre:</b></span><br>
-              Si puedes explicar en una frase por qué ese símbolo encaja con su momento, has elegido bien.<br>
-              Cuando la joya tiene historia, no es un regalo: es un recuerdo.
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
+<br>
+
+<table width="600" align="center">
+<tr>
+<td align="center">
+<b>CONSEJO ÚTIL</b><br>
+Muchas parejas las guardan luego como colgante o pieza conmemorativa.
+</td>
+</tr>
 </table>
 
-<!-- ===================== ESPACIO BLANCO ===================== -->
-<table class="banner" cellpadding="0" cellspacing="0">
-  <tr>
-    <td style="height:30px; background-color:#ffffff;">&nbsp;</td>
-  </tr>
+<br>
+
+<table width="600" align="center" cellpadding="5" cellspacing="0" border="1">
+
+<tr>
+<td>ENERO<br>Nuevos comienzos<br>Pulsera 7 nudos</td>
+<td>FEBRERO<br>San Valentín<br>Collar corazón o infinito<br>Patito cupido</td>
+<td>MARZO<br>Día del Padre<br>Pulsera cuero personalizable<br>Llavero personalizado</td>
+</tr>
+
+<tr>
+<td>ABRIL<br>Comuniones<br>Collar símbolo o inicial</td>
+<td>MAYO<br>Día de la Madre<br>Árbol de la vida o llamador de ángel<br>Patitos</td>
+<td>JUNIO<br>Graduaciones<br>Pulsera simbólica o anillo<br>Patito Graduado</td>
+</tr>
+
+<tr>
+<td>JULIO<br>Viajes<br>Pulsera 7 nudos</td>
+<td>AGOSTO<br>Nuevas etapas<br>Collar luna o estrella</td>
+<td>SEPTIEMBRE<br>Aniversarios<br>Anillo o collar infinito</td>
+</tr>
+
+<tr>
+<td>OCTUBRE<br>Aniversarios<br>Anillo o collar infinito</td>
+<td>NOVIEMBRE<br>Embarazos anunciados<br>Llamador de ángeles</td>
+<td>DICIEMBRE<br>Navidad<br>Joyas simbólicas universales<br>Patitos</td>
+</tr>
+
 </table>
 
-<!-- Footer -->
-<table class="foot1" width="600" align="center" cellpadding="0" cellspacing="0">
-  <tr><td>© 2026 CUSTOMIMA</td></tr>
+<br>
+
+<table width="600" align="center">
+<tr>
+<td align="center">
+<b>🌟 Regla final para acertar siempre:</b><br>
+Si puedes explicar en una frase por qué ese símbolo encaja con su momento, has elegido bien.<br>
+Cuando la joya tiene historia, no es un regalo: es un recuerdo.
+</td>
+</tr>
 </table>
 
 </body>
